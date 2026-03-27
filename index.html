@@ -7,16 +7,734 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>cubee</title>
+    <!--swiper 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--swiper 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- 플러그인, 웹글꼴 연결 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
     <!-- 개별 사용자 디자인 파일 -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <script src="./scripts/common.js" defer></script>
     <script src="./scripts/index.js" defer></script>
 </head>
 <body>
-    
+    <div id="wrap">
+        <div class="top_bnr_swiper">
+            <div class="swiper top_bnr">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <a href="#">NEW i-dle 공식 응원봉 출시! 지금 바로 만나보세요</a>
+                        <a href="#"><img src="#" alt="닫기"></a>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <a href="#">NEW i-dle 공식 응원봉 출시! 지금 바로 만나보세요</a>
+                        <a href="#"><img src="#" alt="닫기"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1><a href="#"><img src="#" alt="cubee"></a></h1><!-- cubee.png / cubee.svg -->
+            <div id="gnb"><!-- m/t : 아이콘으로 변경 생각중 -->
+                <ul class="gnb_depth1"><!-- hover -->
+                    <li><a href="#">ARTIST</a></li>
+                    <li><a href="#">PRODUCT</a></li>
+                    <li><a href="#">EVENET</a></li>
+                    <li><a href="#">NOTICE</a></li>
+                    <!-- 서브메뉴 준비중 -->
+                </ul>
+            </div>
+            <div class="lnb">
+                <a href="#"><img src="#" alt="검색"></a><!-- search.png -->
+                <a href="#"><img src="#" alt="장바구니"></a><!-- cart.png -->
+                <a href="#"><img src="#" alt="회원정보"></a><!-- memvers.png -->
+            </div>
+        </header>
+        <main>
+            <!-- 1.hero banner -->
+            <div class="hero_bnr">
+                <div class="swiper hero">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1"><!-- background img  -->
+                            <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
+                            <p>지금 만나보기<img src="" alt="더보기"></p><!-- more.png / hover -->
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
+                            <p>지금 만나보기<img src="" alt="더보기"></p>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
+                            <p>지금 만나보기<img src="" alt="더보기"></p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="page_scroll">
+                        <div class="swiper-pagination page"></div>
+                        <div class="swiper-scrollbar scroll"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2. artist -->
+            <div class="container artist">
+                <div class="contents artist_left">
+                    <div class="title">
+                        <p>최애 아티스트의 공식 굿즈를 만나보세요!</p>
+                        <h1>ARTIST</h1><!-- h1 fontfamliy:'DecaydenceStraight'; 연결필요 -->
+                    </div>
+                    <div class="moer_btn"><!-- hover -->
+                        <a href="#"><p class="btn_txt">자세히 보기</p><img src="#" alt="자세히보기"></a>
+                    </div>
+                </div>
+                <div class="artist_right"><!-- hover시 img 변경 -->
+                    <a href="#"></a><!-- background img : idle -->
+                    <a href="#"></a><!-- background img : nowz -->
+                    <a href="#"></a><!-- background img :lightsum -->
+                </div>
+            </div>
+            <!-- 3. add bnr 1st -->
+            <div class="add_bnr_1st">
+                <a href="#" class="add_contents"><!-- background img -->
+                    <h1>내 최애 아이돌의 공식응원봉!</h1>
+                    <div class="more_btn"><img src="#" alt="자세히보기"><p>지금 바로 만나보세요</p></div>
+                </a>
+            </div>
+            <!-- 4. best -->
+            <div class="container best">
+                <div class="contents best_left">
+                    <div class="title">
+                        <h1>BEST</h1>
+                        <p>팬들이 가장 많이 선택한 굿즈</p>
+                    </div>
+                    <ul class="tab_manu">
+                        <li><a href="#"><p class="txt">i-dle(아이들)</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">NOWZ(나우즈)</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">LightSum(라잇썸)</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">더보기</p><img src="#" alt="더보기"></a></li>
+                    </ul>
+                </div>
+                <div class="best_right">
+                    <div class="swiper best_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="item_img">
+                                    <p class="rank">1</p>
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>We are 납작 파우치</h1>
+                                        <p class="price">18,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <div class="item_img">
+                                    <p class="rank">2</p>
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>We are 쇼핑백</h1>
+                                        <p class="price">4,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <div class="item_img">
+                                    <p class="rank">4</p>
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>minini We are 반소매 티셔츠</h1>
+                                        <p class="price">42,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>                            
+                            <div class="swiper-slide slide4">
+                                <div class="item_img">
+                                    <p class="rank">6</p>
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>minini We are 카라비너 아크릴 키링</h1>
+                                        <p class="price">17,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <div class="item_img">
+                                    <p class="rank">3</p>
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>We are 납작 파우치</h1>
+                                        <p class="price">18,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <div class="item_img">
+                                    <p class="rank">5</p>
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>We are 납작 파우치</h1>
+                                        <p class="price">18,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 5. coming soon -->
+            <div class="container coming_container">
+                <div class="coming_left">
+                    <img src="#" alt=""><!-- img : 제품 전체컷 -->
+                </div>
+                <div class="contents coming_right">
+                    <div class="title">
+                        <h1>COMING SOON !</h1>
+                        <p><span>i-dle의 MININI</span>출시가<span>7일</span>남았어요!</p>
+                    </div>
+                    <div class="coming_wrap">
+                        <div class="swiper comming_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <div class="item_img">
+                                        <a href="#" class="noti"><img src="#" alt="오픈알림"></a>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">i-dle(아이들)</a>
+                                        <a href="#" class="info">
+                                            <h1>minini We are 인형 키링[sonini]</h1>
+                                            <p class="price">14,000원</p>
+                                            <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                        </a>
+                                    </div>
+                                </div>    
+                                <div class="swiper-slide slide2">
+                                    <div class="item_img">
+                                        <a href="#" class="noti"><img src="#" alt="오픈알림"></a>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">i-dle(아이들)</a>
+                                        <a href="#" class="info">
+                                            <h1>minini We are 인형 키링[minnini]</h1>
+                                            <p class="price">14,000원</p>
+                                            <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <div class="item_img">
+                                        <a href="#" class="noti"><img src="#" alt="오픈알림"></a>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">i-dle(아이들)</a>
+                                        <a href="#" class="info">
+                                            <h1>minini We are 인형 키링[sonini]</h1>
+                                            <p class="price">14,000원</p>
+                                            <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                        </a>
+                                    </div>
+                                </div>    
+                                <div class="swiper-slide slide4">
+                                    <div class="item_img">
+                                        <a href="#" class="noti"><img src="#" alt="오픈알림"></a>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">i-dle(아이들)</a>
+                                        <a href="#" class="info">
+                                            <h1>minini We are 인형 키링[minnini]</h1>
+                                            <p class="price">14,000원</p>
+                                            <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <div class="item_img">
+                                        <a href="#" class="noti"><img src="#" alt="오픈알림"></a>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">i-dle(아이들)</a>
+                                        <a href="#" class="info">
+                                            <h1>minini We are 인형 키링[minnini]</h1>
+                                            <p class="price">14,000원</p>
+                                            <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev prev"></div>
+                        <div class="swiper-button-next next"></div>
+                        <div class="page_scroll">
+                            <div class="swiper-pagination page"></div>
+                            <div class="swiper-scrollbar scroll"></div>
+                        </div>
+                    </div>
+                    <div class="noti_btn">
+                        <p>오픈 알림 받기를 누르면 아이들을 가장 먼저 만나볼 수있어요!</p>
+                        <div class="moer_btn">
+                            <a href="#"><p class="btn_txt">오픈 알림받기</p><img src="#" alt="자세히보기"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 6. new -->
+            <div class="container new_container">
+                <div class="content">
+                    <div class="title">
+                        <h1>new!</h1>
+                        <p>지금 당신에게 도착한 새로운 굿즈를 확인해 보세요!</p>
+                    </div>
+                    <a href="#"><img src="#" alt="더보기"></a>
+                    <div class="new_wrap">
+                        <div class="swiper new_swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <div class="item_img"><!-- background img -->
+                                        <a href="#" class="like"><img src="#" alt=""></a>
+                                        <div class="badge">
+                                            <p>new</p>
+                                            <p>5%</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">NOWZ(나우즈)</a>
+                                        <a href="#" class="info">
+                                            <h1>NOWZ&FRIENDS 미니 인형 키링</h1>
+                                            <p class="price">36,100원 <del>38,000원</del></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <div class="item_img"><!-- background img -->
+                                        <a href="#" class="like"><img src="#" alt=""></a>
+                                        <div class="badge">
+                                            <p>new</p>
+                                            <p>5%</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">NOWZ(나우즈)</a>
+                                        <a href="#" class="info">
+                                            <h1>NOWZ&FRIENDS WINTER 로브</h1>
+                                            <p class="price">178,600원 <del>188,000원</del></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <div class="item_img"><!-- background img -->
+                                        <a href="#" class="like"><img src="#" alt=""></a>
+                                        <div class="badge">
+                                            <p>new</p>
+                                            <p>5%</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">NOWZ(나우즈)</a>
+                                        <a href="#" class="info">
+                                            <h1>NOWZ&FRIENDS 중형 인형</h1>
+                                            <p class="price">64,600원 <del>68,000원</del></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <div class="item_img"><!-- background img -->
+                                        <a href="#" class="like"><img src="#" alt=""></a>
+                                        <div class="badge">
+                                            <p>new</p>
+                                            <p>5%</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">NOWZ(나우즈)</a>
+                                        <a href="#" class="info">
+                                            <h1>NOWZ FRIENDS 쿠션</h1>
+                                            <p class="price">55,100원 <del>58,000원</del></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <div class="item_img"><!-- background img -->
+                                        <a href="#" class="like"><img src="#" alt=""></a>
+                                        <div class="badge">
+                                            <p>new</p>
+                                            <p>5%</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">NOWZ(나우즈)</a>
+                                        <a href="#" class="info">
+                                            <h1>NOWZ&FRIENDS 미니 인형 키링</h1>
+                                            <p class="price">36,100원 <del>38,000원</del></p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide slide6">
+                                    <div class="item_img"><!-- background img -->
+                                        <a href="#" class="like"><img src="#" alt=""></a>
+                                        <div class="badge">
+                                            <p>new</p>
+                                            <p>5%</p>
+                                        </div>
+                                    </div>
+                                    <div class="item_info">
+                                        <a href="#" class="artist">NOWZ(나우즈)</a>
+                                        <a href="#" class="info">
+                                            <h1>NOWZ&FRIENDS 미니 인형 키링</h1>
+                                            <p class="price">36,100원 <del>38,000원</del></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev prev"></div>
+                        <div class="swiper-button-next next"></div>
+                        <div class="page_scroll">
+                            <div class="swiper-pagination page"></div>
+                            <div class="swiper-scrollbar scroll"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 7. product  -->
+            <div class="container product">
+                <div class="contents product_left">
+                    <div class="title">
+                        <p>카테고리별로 원하는 굿즈를 찾아보세요</p>
+                        <h1>PRODUCT</h1>
+                    </div>
+                    <ul class="tab_manu">
+                        <li><a href="#"><p class="txt">ALL</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">DVD</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">keyring</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">Photo Card</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">ACC</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">Cheerings</p><img src="#" alt="더보기"></a></li>
+                    </ul>
+                </div>
+                <div class="product_right">
+                    <div class="swiper product_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">NOWZ(나우즈)</a>
+                                    <a href="#" class="info">
+                                        <h1>NOWZ LUCKY SHOP 인형 스트링 키링</h1>
+                                        <p class="price">48,000원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">NOWZ(나우즈)</a>
+                                    <a href="#" class="info">
+                                        <h1>NOWZ LUCKY SHOP 카드지갑</h1>
+                                        <p class="price">38,000원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">NOWZ(나우즈)</a>
+                                    <a href="#" class="info">
+                                        <h1>NOWZ LUCKY SHO 백팩 (L)</h1>
+                                        <p class="price">188,000원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">NOWZ(나우즈)</a>
+                                    <a href="#" class="info">
+                                        <h1>FRIENDS 레진 키캡</h1>
+                                        <p class="price">26,900원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">LIGHTSUM(라잇썸)</a>
+                                    <a href="#" class="info">
+                                        <h1>[PRE-ORDER] BALL CAP SET</h1>
+                                        <p class="price">19,000원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">LIGHTSUM(라잇썸)</a>
+                                    <a href="#" class="info">
+                                        <h1>원더룸 스트링 파우치</h1>
+                                        <p class="price">19,000원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide7">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">LIGHTSUM(라잇썸)</a>
+                                    <a href="#" class="info">
+                                        <h1>Boom 볼캡</h1>
+                                        <p class="price">39,000원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide8">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">LIGHTSUM(라잇썸)</a>
+                                    <a href="#" class="info">
+                                        <h1>랜덤 아크릴 참 (1개)</h1>
+                                        <p class="price">6,000원</p>
+                                        <p class="bedge"><span>BEST</span><span>NEW</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev prev"></div>
+                    <div class="swiper-button-next next"></div>
+                    <div class="page_scroll">
+                        <div class="swiper-pagination page"></div>
+                        <div class="swiper-scrollbar scroll"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 8. add bnr 2nd -->
+            <div class="add_bnr_2nd">
+                <a href="#" class="add_contents"><!-- background img -->
+                    <div class="logo">
+                        <img src="#" alt="toss">
+                        <img src="#" alt="">
+                        <p>CUBEE</p>
+                    </div>
+                    <h1>토스페이로 할인 받고  MD 사자!</h1>
+                    <p>최대 4,000원 혜택 받으세요!</p>
+                </a>
+            </div>
+            <!-- 9. md pick -->
+            <div class="container mdpick">
+                <div class="contents mdpick_left">
+                    <div class="title">
+                        <h1>md pick</h1>
+                        <p>MD가 직접 고른 이번 달 주목할 아이템!</p>
+                    </div>
+                    <ul class="tab_manu">
+                        <li><a href="#"><p class="txt">i-dle(아이들)</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">NOWZ(나우즈)</p><img src="#" alt="더보기"></a></li>
+                        <li><a href="#"><p class="txt">LightSum(라잇썸)</p><img src="#" alt="더보기"></a></li>
+                    </ul>
+                    <div class="more_btn"><a href="#"><p class="txt">더보기</p><img src="#" alt="더보기"></a></div>
+                </div>
+                <div class="mdpick_right">
+                    <div class="swiper mdpick_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide1">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>SUPER LADY 티셔츠(Black)</h1>
+                                        <p class="price">39,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide2">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>SUPER LADY 미니 아크릴 뱃지 세트 </h1>
+                                        <p class="price">12,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide3">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>슬라이드 아크릴키링 포카세트 2 VER.</h1>
+                                        <p class="price">19,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide4">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>캔뱃지 2 VER.</h1>
+                                        <p class="price">6,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide5">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>SUPER LADY 티셔츠(Black)</h1>
+                                        <p class="price">39,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide6">
+                                <div class="item_img">
+                                    <a href="#" class="like"><img src="#" alt=""></a>
+                                </div>
+                                <div class="item_info">
+                                    <a href="#" class="artist">i-dle(아이들)</a>
+                                    <a href="#" class="info">
+                                        <h1>SUPER LADY 티셔츠(Black)</h1>
+                                        <p class="price">39,000원</p>
+                                        <p class="bedge"><span>BEST</span></p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 10. event -->
+            <div class="container event">
+                <div class="contents">
+                    <div class="title">
+                        <h1>md pick</h1>
+                        <p>MD가 직접 고른 이번 달 주목할 아이템!</p>
+                    </div>
+                    <ul class="event_list">
+                        <li>
+                            <a href="#">
+                                <p>Play the whole world in Mono</p>
+                                <h1>CONCERT</h1>
+                                <img src="#" alt="">
+                                <div class="more_btn"><p>더보기</p><img src="#" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>THE 3TH ALBUM</p>
+                                <img src="#" alt="">
+                                <h1>SHOWCASE</h1>
+                                <div class="more_btn"><p>더보기</p><img src="#" alt=""></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>팝업 초대장 이벤트</p>
+                                <img src="#" alt="">
+                                <div class="more_btn"><p>더보기</p><img src="#" alt=""></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_left">
+                <div class="fnb">
+                    <a href="#">회사소개</a>
+                    <a href="#">상품입점문의</a>
+                    <a href="#">제휴/광고문의</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">사업자정보확인</a>
+                </div>
+                <div class="brand_info">
+                    <p><span>고객센터</span>오전 10시 - 12시, 오후 2시-5시</p>
+                    <address>
+                        (주)코팬글로벌<br>
+                        &copy;2011 Cube Entertainment. All rights reserved.<br>
+                        경기도 남양주시 와부읍 도심길 121-12<br>Email ask@cubee.co.kr<br>
+                        대표이사 조성희 / 개인정보취급자 조성희<br>
+                        사업자등록번호 : 120-87-75811 통신판매업신고번호 : 제2017-와부조안-0031호
+                    </address>
+                </div>
+            </div>
+            <div class="footer_right">
+                <div class="family_site">
+                    <ul class="depth_1">
+                        <li><a href="#">cube official</a></li>
+                        <li><a href="#">VT CUBE JAPAN</a></li>
+                        <li><a href="#">CUBE CAFE</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="logo"><img src="#" alt="cubee"></a>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
