@@ -1,1 +1,73 @@
 /* index.css */
+#wrap {min-width: 1760px;}
+/* ----------------------------------------------------------- top_bnr */
+#wrap .top_bnr_swiper {background-color: aqua;}
+#wrap .top_bnr_swiper .top_bnr {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide {text-align: center;}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide a:nth-child(1) {
+    font-size: 0.88rem; line-height: 32px; 
+}
+#wrap .top_bnr_swiper .top_bnr .close_btn {
+    position: absolute; right:20px; top:50%; transform: translateY(-50%);
+}
+#wrap .top_bnr_swiper .top_bnr .close_btn img {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide1 {}
+#wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide2 {}
+/* -------------------------------------------------------------- header  */
+#wrap header {}
+#wrap header h1 {}
+#wrap header h1 a {}
+#wrap header h1 a img {}
+#wrap header .gnb {}
+#wrap header .gnb .gnb_depth1 {
+    display: flex; flex-flow: row nowrap;
+}
+#wrap header .gnb .gnb_depth1 li {}
+#wrap header .gnb .gnb_depth1 li a {
+    font-weight: 500; line-height: 80px;
+    background-color: aquamarine;
+}
+#wrap header .lnb {}
+#wrap header .lnb a {}
+#wrap header .lnb a img {}
+/* --------------------------------------------------------------- 1. hero banner */
+#wrap main {}
+#wrap main .hero_bnr {}
+#wrap main .hero_bnr .swiper {}
+#wrap main .hero_bnr .swiper .swiper-wrapper {}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide {}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide h1 {}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .more_btn {}
+#wrap main .hero_bnr .swiper .swiper-wrapper .swiper-slide .more_btn img {}
+#wrap main .hero_bnr {}
+#wrap main .hero_bnr .hero .swiper-wrapper {}
+#wrap main .hero_bnr .hero .swiper-wrapper .slide1 {}
+#wrap main .hero_bnr .hero .swiper-wrapper .slide1 h1 {}
+#wrap main .hero_bnr .hero .swiper-wrapper .slide1 .more_btn {}
+#wrap main .hero_bnr .hero .prev {}
+#wrap main .hero_bnr .hero .next {}
+#wrap main .hero_bnr .hero .page_scroll {}
+#wrap main .hero_bnr .hero .page_scroll .page {}
+#wrap main .hero_bnr .hero .page_scroll .scroll {}
+/* ---------------------------------------------------------- 2.artist */
+#wrap .container {}
+#wrap .container .contents {}
+#wrap .container .contents .title {}
+#wrap .container .contents .title p {}
+#wrap .container .contents .title h1 {}
+#wrap .container .contents .more_btn {}
+#wrap .container .contents .more_btn a {}
+#wrap .container .contents .more_btn a .btn_txt {}
+#wrap .container .contents .more_btn a  img {}
+#wrap .artist {}
+#wrap .artist .artist_left {}
+#wrap .artist .artist_left .title {}
+#wrap .artist .artist_left .title p {}
+#wrap .artist .artist_left .title h1 {}
+#wrap .artist .artist_left .more_btn {}
+#wrap .artist .artist_left .more_btn a {}
+#wrap .artist .artist_left .more_btn a .btn_txt {}
+#wrap .artist .artist_left .more_btn a img {}
+#wrap .artist .artist_right {}
+#wrap .artist .artist_right a {}
