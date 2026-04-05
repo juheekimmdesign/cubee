@@ -1,4 +1,6 @@
 /* index.css */
+/*----------------------------------------------------------------  공통 */
+
 /* --------------------------------------------------------------- 1. hero banner */
 #wrap main {}
 #wrap main .hero_bnr {}
@@ -74,37 +76,135 @@
 #wrap main .add_bnr_product .add_contents .more_btn img {}
 #wrap main .add_bnr_product .add_contents .more_btn p {color: #fff; font-size: 1.50rem;}
 /* ---------------------------------------------------4.best */
-#wrap main .best {padding: 160px 0 160px 80px;}
+#wrap main .best {
+    display: flex;
+    padding: 160px 0 160px 80px;
+}
 #wrap main .best .best_left {display: flex; flex-flow: column nowrap; justify-content: space-between;}
 #wrap main .best .best_left .title {}
 #wrap main .best .best_left .title h1 {}
-#wrap main .best .best_left .title h1 p {}
-#wrap main .best .best_left .tab_manu {}
-#wrap main .best .best_left .tab_manu li {}
-#wrap main .best .best_left .tab_manu li a {
+#wrap main .best .best_left .title p {}
+#wrap main .best .best_left .tab_menu {}
+#wrap main .best .best_left .tab_menu li {}
+#wrap main .best .best_left .tab_menu li a {
     display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between; 
     height: 64px; width: 380px; padding: 10px; border-bottom: 1px solid #f9f9f9; 
 }
-#wrap main .best .best_left .tab_manu li a .txt {color: #aaa;}
-#wrap main .best .best_left .tab_manu li a img {}
+#wrap main .best .best_left .tab_menu li a .txt {color: #aaa;}
+#wrap main .best .best_left .tab_menu li a img {}
 #wrap main .best .best_right {width: calc(100% - 380px);}
 #wrap main .best .best_right .best_swiper {width: 100%;}
 #wrap main .best .best_right .best_swiper .swiper-wrapper {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide {background-color: aqua;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img {position: relative; margin-bottom: 20px;}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img .rank {
     background-color: #1e1e1e; color: #fff;
     width: 40px; height: 40px; text-align: center; line-height: 40px;
-    position: absolute; font-size: 1.13em;
+    position: absolute; top: 0; left: 0;  font-size: 1.13em;
+}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img .like {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img .like img {width: 100%;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .artist_name,
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info h1,
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info .price {font-size: 0.88rem; margin-bottom: 8px;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .artist_name {display: inline-block;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info h1 {color: #555;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info .price {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info .badge {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span {
+    display: inline-block; padding: 4px;
+    font-size: 0.88rem; font-size: 0.69rem;color: #fff; background-color: #1e1e1e;
 }
 #wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img .rank {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img .like {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img .like img {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 .price {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 .bedge {}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_info .artist .info h1 .bedge span {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide2 {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide3 {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide4 {}
+/* -------------------------------------------------------------------------------------------- 5. comingsoon */
+#wrap main .coming_container {padding: 0 80px 160px 0;}
+#wrap main .coming_container .coming_left {width: 940px;}
+#wrap main .coming_container .coming_left img {width: 100%;}
+#wrap main .coming_container .coming_right {
+    display: flex; flex-flow: column nowrap;
+    align-items: center; justify-content: center;
+    width: calc(100% - 940px);
+
+}
+#wrap main .coming_container .coming_right .title {margin-bottom: 80px;}
+#wrap main .coming_container .coming_right .title h1 {}
+#wrap main .coming_container .coming_right .title p {}
+#wrap main .coming_container .coming_right .title p span {}
+#wrap main .coming_container .coming_right .coming_wrap {margin-bottom: 160px;}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper {width: 700px;}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_img {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_img .noti {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_img .noti img {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .artist_name {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info{}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info h1 {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info p {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info .badge {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span {}
+#wrap main .coming_container .coming_right .coming_wrap .prev {}
+#wrap main .coming_container .coming_right .coming_wrap .next {}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll {}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page {}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll {}
+#wrap main .coming_container .coming_right .noti_btn {}
+#wrap main .coming_container .coming_right .noti_btn > p {display: inline-block; background-color: #F5F8FF; padding: 4px;}
+#wrap main .coming_container .coming_right .noti_btn .moer_btn {}
+#wrap main .coming_container .coming_right .noti_btn .moer_btn a {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
+    height: 64px; width: 380px; padding: 10px; border: 1px solid #1e1e1e;
+}
+#wrap main .coming_container .coming_right .noti_btn .moer_btn a .btn_txt {}
+#wrap main .coming_container .coming_right .noti_btn .moer_btn a .btn_txt img {}
+/* ----------------------------------------------------------6. new */
+#wrap main .new_container {
+    background-color: #1e1e1e; padding: 120px 80px;
+}
+#wrap main .new_container .contents {}
+#wrap main .new_container .contents .title {
+    display: flex; flex-flow: row nowrap; align-items: end;
+    margin-bottom: 80px;}
+#wrap main .new_container .contents .title .title_left h1 {color: #fff;}
+#wrap main .new_container .contents .title .title_left p {}
+#wrap main .new_container .contents .more_btn {background-color: antiquewhite;}
+#wrap main .new_container .contents .more_btn img {}
+#wrap main .new_container .contents .new_wrap {width: 1760px;}
+#wrap main .new_container .contents .new_wrap .new_swiper {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img {height: 425px;}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .like {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .like img {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .badge {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .badge p {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .badge p {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .artist_name {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info h1 {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info .price {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info .price del {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide1 .item_img {
+    background-image: url(../images/product/new_item_1.jpg); background-size: cover;
+}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide2 .item_img {
+    background-image: url(../images/product/new_item_2.jpg); background-size: cover;
+}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide3 .item_img {
+    background-image: url(../images/product/new_item_3.jpg); background-size: cover;
+}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide4 .item_img {
+    background-image: url(../images/product/new_item_4.jpg); background-size: cover;
+}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide5 .item_img {
+    background-image: url(../images/product/new_item_1.jpg); background-size: cover;
+}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide6 .item_img {
+    background-image: url(../images/product/new_item_2.jpg); background-size: cover;
+}

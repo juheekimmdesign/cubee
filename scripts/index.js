@@ -1,22 +1,17 @@
 // index.js
-const topBnr = document.querySelector('.top_bnr_swiper .top_bnr')
 const heroBnr = document.querySelector('.hero_bnr .hero')
 const best = document.querySelector('.best_right .best_swiper')
-console.log(topBnr, heroBnr, best);
+const coming = document.querySelector ('.coming_wrap .coming_swiper') 
+const newslide = document.querySelector('.new_wrap .new_swiper')
+console.log( heroBnr, best , coming, newslide);
+
+
 const bestSwiper = new Swiper(best, {
-    slidesPerView:4,
-    spaceBeetween:20,
+    slidesPerView: 4,
+    spaceBetween: 20,
 })
-
-const topBnrSwiper = new Swiper(topBnr, {
-    effect:'fade',
-    loop:true,
-    autoplay:{delay:5000,},
-})
-console.log(topBnr);
-
 const heroBnrSwiper = new Swiper(heroBnr, {
-    loop:true,
+    loop: true,
     // pagination:{
     //     el:'.hero .page',
     //     type:'fraction',
@@ -28,4 +23,14 @@ const heroBnrSwiper = new Swiper(heroBnr, {
     // scrollbar:{
     //     el:'.hero .scroll',
     // },
+})
+const comingSwiper = new Swiper(coming, {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 20,
+})
+const newSwiper = new Swiper(newslide, {
+    loop: true,
+    slidesPerView: 4,
+    spaceBetween: 20,
 })
