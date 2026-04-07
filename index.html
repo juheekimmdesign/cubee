@@ -36,9 +36,7 @@
                         <a href="#">NEW! 지금 바로 만나보세요</a>
                     </div>
                 </div>
-                <div class="close_btn">
-                    <a href="#" class="close_btn"><img src="./images/common/close.png" alt="닫기"></a>
-                </div>
+                <a href="#" class="close_btn"><img src="./images/common/close.png" alt="닫기"></a>
             </div>
         </div>
         <header>
@@ -52,11 +50,11 @@
                     <!-- 서브메뉴 준비중 -->
                 </ul>
             </nav>
-            <nav class="lnb">
-                <a href="#"><img src="./images/common/search.svg" alt="검색"></a><!-- search.png -->
-                <a href="#"><img src="./images/common/cart.svg" alt="장바구니"></a><!-- cart.png -->
-                <a href="#"><img src="./images/common/user.svg" alt="회원정보"></a><!-- memvers.png -->
-            </nav>
+            <div class="lnb">
+                <a href="#" class="search"><img src="./images/common/search.svg" alt="검색"></a><!-- search.png -->
+                <a href="#" class="cart"><img src="./images/common/cart.svg" alt="장바구니"></a><!-- cart.png -->
+                <a href="#" class="u"><img src="./images/common/user.svg" alt="회원정보"></a><!-- memvers.png -->
+            </div>
         </header>
         <main>
             <!-- 1.hero banner -->
@@ -66,28 +64,28 @@
                         <div class="swiper-slide slide1"><!-- background img  -->
                             <div class="slide_txt">
                                 <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
-                                <p class = more_btn>
+                                <a class = more_btn>
                                     <span>지금 만나보기</span>
                                     <img src="./images/common/more.svg" alt="더보기">
-                                </p><!-- more.png -->
+                                </a><!-- more.png -->
                             </div>
                         </div>
                         <div class="swiper-slide slide2"><!-- background img  -->
                             <div class="slide_txt">
                                 <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
-                                <p class = more_btn>
+                                <a class = more_btn>
                                     <span>지금 만나보기</span>
                                     <img src="./images/common/more.svg" alt="더보기">
-                                </p><!-- more.png -->
+                                </a><!-- more.png -->
                             </div>
                         </div>
                         <div class="swiper-slide slide3"><!-- background img  -->
                             <div class="slide_txt">
                                 <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
-                                <p class = more_btn>
+                                <a class = more_btn>
                                     <span>지금 만나보기</span>
                                     <img src="./images/common/more.svg" alt="더보기">
-                                </p><!-- more.png -->
+                                </a><!-- more.png -->
                             </div>
                         </div>
                     </div>
@@ -111,9 +109,9 @@
                     </div>
                 </div>
                 <div class="artist_right"><!-- hover시 img 변경 -->
-                    <a href="#"><img src="./images/product/artist_01.jpg" alt=""></a><!-- background img : idle -->
-                    <a href="#"><img src="./images/product/artist_02.jpg" alt=""></a><!-- background img : nowz -->
-                    <a href="#"><img src="./images/product/artist_03.jpg" alt=""></a><!-- background img :lightsum -->
+                    <a href="#"><img src="./images/product/artist_01.jpg" alt="idle"></a><!-- background img : idle -->
+                    <a href="#"><img src="./images/product/artist_02.jpg" alt="nowz"></a><!-- background img : nowz -->
+                    <a href="#"><img src="./images/product/artist_03.jpg" alt="lightsum"></a><!-- background img :lightsum -->
                 </div>
             </div>
             <!-- 3. add bnr 1st -->
@@ -129,24 +127,27 @@
             <!-- 4. best -->
             <div class="container best">
                 <div class="contents best_left">
-                    <div class="title">
-                        <h1>BEST</h1>
-                        <p>팬들이 가장 많이 선택한 굿즈</p>
+                    <div class="contents_wrap">
+                        <div class="title">
+                            <h1>BEST</h1>
+                            <p>팬들이 가장 많이 선택한 굿즈</p>
+                        </div>
+                        <ul class="tab_menu">
+                            <li><a href="#" class="active"><p class="tab">i-dle(아이들)</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">NOWZ(나우즈)</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">LightSum(라잇썸)</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">더보기</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                        </ul>
                     </div>
-                    <ul class="tab_menu">
-                        <li><a href="#" class="active"><p class="tab">i-dle(아이들)</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">NOWZ(나우즈)</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">LightSum(라잇썸)</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">더보기</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                    </ul>
                 </div>
                 <div class="best_right">
                     <div class="swiper best_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <div class="item_img">
+                                <div class="item">
+                                    <a href="#" class="item_img"><img src="" alt=""></a>
                                     <p class="rank">1</p>
-                                    <a href="#" class="like"><img src="./images/product/like.svg" alt=""></a>
+                                    <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                 </div>
                                 <div class="item_info">
                                     <a href="#" class="artist_name">i-dle(아이들)</a>
@@ -435,19 +436,21 @@
             </div>
             <!-- 7. product  -->
             <div class="container product">
-                <div class="contents product_left">
-                    <div class="title">
-                        <h1>PRODUCT</h1>
-                        <p>카테고리별로 원하는 굿즈를 찾아보세요</p>
+                <div class="contents contents_more product_left">
+                    <div class="contents_wrap">
+                        <div class="title">
+                            <h1>PRODUCT</h1>
+                            <p>카테고리별로 원하는 굿즈를 찾아보세요</p>
+                        </div>
+                        <ul class="tab_menu">
+                            <li><a href="#" class="active"><p class="tab">ALL</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">DVD</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">keyring</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">Photo Card</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">ACC</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">Cheerings</p><img src="./images/product/more_active.svg " alt="더보기"></a></li>
+                        </ul>
                     </div>
-                    <ul class="tab_menu">
-                        <li><a href="#" class="active"><p class="tab">ALL</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">DVD</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">keyring</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">Photo Card</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">ACC</p><img src="./images/product/more_active.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">Cheerings</p><img src="./images/product/more_active.svg " alt="더보기"></a></li>
-                    </ul>
                     <div class="more_btn"><a href="#"><p class="txt">더보기</p><img src="./images/product/more_down.svg" alt="더보기"></a></div>
                 </div>
                 <div class="product_right">
@@ -569,16 +572,18 @@
             </div>
             <!-- 9. md pick -->
             <div class="container mdpick">
-                <div class="contents mdpick_left">
-                    <div class="title">
-                        <h1>md pick</h1>
-                        <p>MD가 직접 고른 이번 달 주목할 아이템!</p>
+                <div class="contents contents_more mdpick_left">
+                    <div class="contents_wrap">
+                        <div class="title">
+                            <h1>md pick</h1>
+                            <p>MD가 직접 고른 이번 달 주목할 아이템!</p>
+                        </div>
+                        <ul class="tab_menu">
+                            <li><a href="#" class="active"><p class="tab">i-dle(아이들)</p><img src="./images/product/more_btn.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">NOWZ(나우즈)</p><img src="./images/product/more_btn.svg" alt="더보기"></a></li>
+                            <li><a href="#"><p class="tab">LightSum(라잇썸)</p><img src="./images/product/more_btn.svg" alt="더보기"></a></li>
+                        </ul>
                     </div>
-                    <ul class="tab_menu">
-                        <li><a href="#" class="active"><p class="tab">i-dle(아이들)</p><img src="./images/product/more_btn.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">NOWZ(나우즈)</p><img src="./images/product/more_btn.svg" alt="더보기"></a></li>
-                        <li><a href="#"><p class="tab">LightSum(라잇썸)</p><img src="./images/product/more_btn.svg" alt="더보기"></a></li>
-                    </ul>
                     <div class="more_btn"><a href="#"><p class="txt">더보기</p><img src="./images/product/more_btn.svg" alt="더보기"></a></div>
                 </div>
                 <div class="mdpick_right">
@@ -669,6 +674,7 @@
             <!-- 10. event -->
             <div class="container event">
                 <div class="contents">
+                    <div class="contents_wrap"></div>
                     <div class="title">
                         <div class="title_left">
                             <h1>EVENT</h1>

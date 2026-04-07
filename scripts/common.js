@@ -5,5 +5,5 @@ console.log(topBnr);
 const topBnrSwiper = new Swiper(topBnr, {
     effect:'fade',
     loop:true,
-    autoplay:{delay:5000,},
+    autoplay:{delay:2000,},
 })

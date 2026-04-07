@@ -16,7 +16,7 @@
 #wrap .top_bnr_swiper .top_bnr .close_btn {
     position: absolute; right:20px; top:50%; transform: translateY(-50%); z-index: 10;
 }
-#wrap .top_bnr_swiper .top_bnr .close_btn img {}
+#wrap .top_bnr_swiper .top_bnr .close_btn img {width: 100%;}
 #wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide1 {}
 #wrap .top_bnr_swiper .top_bnr .swiper-wrapper .slide2 {}
 /* -------------------------------------------------------------- header  */
@@ -28,7 +28,7 @@
     position: relative;
     width: 100%;
 }
-#wrap header h1 {}
+#wrap header h1 {width: 244px;}
 #wrap header h1 a {}
 #wrap header h1 a img {width: 100%;}
 #wrap header #gnb {
@@ -50,3 +50,41 @@
     gap: 20px;}
 #wrap header .lnb a {display: block; width: 24px;}
 #wrap header .lnb a img {width: 100%;}
+/* ------------------------------------------------------------------------------- */
+#wrap main .container {
+    display: flex; flex-flow: row nowrap; 
+    justify-content: space-between; gap: 80px;
+}
+#wrap main .container .contents {}
+#wrap main .container .contents .title {margin-bottom: 40px;}
+#wrap main .container .contents .title p {font-weight: 500; color: #aaa;}
+#wrap main .container .contents .title h1 {margin-bottom: 20px; font-family: 'DecaydenceStraight'; font-size: 1.50rem;}
+/* --------------------------------------------------------------------  tab_manu_artist */
+/* 아티스트 탭 */
+#wrap main .container .contents_more {
+    display: flex; flex-flow: column nowrap; justify-content: space-between;
+}
+#wrap main .container .contents .contents_wrap {}
+#wrap main .container .contents .contents_wrap .title {}
+#wrap main .container .contents .contents_wrap .title p {font-weight: 500; color: #aaa;}
+#wrap main .container .contents .contents_wrap .title h1 {margin-bottom: 20px; font-family: 'DecaydenceStraight'; font-size: 1.50rem;}
+#wrap main .container .contents .contents_wrap .tab_menu {}
+#wrap main .container .contents .contents_wrap .tab_menu li {}
+#wrap main .container .contents .contents_wrap .tab_menu .active  {color: #1C4797;}
+#wrap main .container .contents .contents_wrap .tab_menu li a {
+    display: flex; flex-flow: row nowrap;
+    align-items: center; justify-content: space-between; 
+    height: 64px; width: 380px; 
+    padding: 10px 0; border-bottom: 1px solid #f9f9f9; 
+}
+#wrap main .container .contents .contents_wrap .tab_menu li a .tab {color: #aaa;}
+#wrap main .container .contents .contents_wrap .tab_menu li .active {border-bottom: 1px solid #1C4797;}
+#wrap main .container .contents .contents_wrap .tab_menu li .active .tab {color: #1C4797;}
+#wrap main .container .contents .contents_wrap .tab_menu li .active img {display: block;}
+#wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
+/* 더보기 버튼 */
+#wrap main .container .contents_more .more_btn a {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
+    height: 64px; width: 100%; padding: 10px 20px; border: 1px solid #ddd;
+}
+/* --------------------------------------------------------------------------------------- */
