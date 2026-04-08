@@ -4,7 +4,7 @@
 /* --------------------------------------------------------------- 1. hero banner */
 #wrap main {width: 100%;}
 #wrap main .hero_bnr {width: 100%;}
-#wrap main .hero_bnr .hero {height: 700px;}
+#wrap main .hero_bnr .hero {height: 75vh;}
 #wrap main .hero_bnr .hero .swiper-wrapper {}
 #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {}
 #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{
@@ -34,8 +34,7 @@
 }
 #wrap main .artist .artist_left {
     display: flex; flex-flow: column nowrap;
-    justify-content: space-between;
-    width: 380px;
+    justify-content: space-between; width: 380px;
 }
 #wrap main .artist .artist_left .title {}
 #wrap main .artist .artist_left .title p {}
@@ -51,7 +50,8 @@
 #wrap main .artist .artist_left .more_btn a img {}
 #wrap main .artist .artist_right {
     display: flex; flex-flow: row nowrap; gap: 20px;
-    width: 100%;}
+    width: 100%; flex: 1;
+}
 #wrap main .artist .artist_right a {}
 #wrap main .artist .artist_right a img {width: 100%;}
 /* -------------------------------------------------- 3. add bnr 1st */
@@ -83,7 +83,7 @@
 #wrap main .best .best_left {width: 100%;}
 #wrap main .best .best_left .contents_wrap {
     display: flex; flex-flow: column nowrap;
-    justify-content: space-between; height: 100%;
+    justify-content: space-between; height: 100%; width: 380px;
 }
 #wrap main .best .best_left .contents_wrap .title {}
 #wrap main .best .best_left .contents_wrap .title h1 {}
@@ -105,39 +105,23 @@
 #wrap main .best .best_right .best_swiper .swiper-wrapper .slide2 {}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .slide3 {}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .slide4 {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide5 {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .slide6 {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item {margin-bottom: 20px;}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img {
-    position: relative;
-    width: 100%; height: 340px; margin-bottom: 20px;
-    background-size: cover;
+    width: 100%; height: 340px; margin-bottom: 20px; 
 }
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 .item_img {
-    background-image: url(../images/product/best_item_1.jpg); 
-}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide2 .item_img {
-    background-image: url(../images/product/best_item_2.jpg);
-}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide3 .item_img {
-    background-image: url(../images/product/best_item_3.jpg); 
-}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide4 .item_img {
-    background-image: url(../images/product/best_item_4.jpg);
-}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide5 .item_img {
-    background-image: url(../images/product/best_item_1.jpg);
-}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .slide6 .item_img {
-    background-image: url(../images/product/best_item_2.jpg);
-}
-#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img .rank {
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img img {width: 100%;}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item .rank {
     position: absolute; top: 0; left: 0;
     width: 40px; height: 40px; 
     font-size: 1.13em; text-align: center; line-height: 40px;
     background-color: #1e1e1e; color: #fff;
 }
-#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img .like {
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item .like {
     position: absolute; top: 16px; right: 16px;
 }
-#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_img .like img {}
+#wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item .item_img .like img {}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info {}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .artist_name {display: block; font-weight: 700; color: #555;}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .artist_name,
@@ -153,12 +137,12 @@
 }
 /* -------------------------------------------------------------------------------------------- 5. comingsoon */
 #wrap main .coming_container { width: 100%; padding: 0 80px 160px 0;}
-#wrap main .coming_container .coming_left {height: 940px;}
+#wrap main .coming_container .coming_left {height: 940px; flex:1}
 #wrap main .coming_container .coming_left img {width: 100%;}
 #wrap main .coming_container .coming_right {
     display: flex; flex-flow: column nowrap;
     align-items: center; justify-content: center;
-    width: calc(100% - 940px);
+    width: calc(100% - 940px); flex:0.8;
 
 }
 #wrap main .coming_container .coming_right .title {margin-bottom: 80px; text-align: center;}
@@ -170,13 +154,13 @@
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper {width: 700px;}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide {}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_img {width: 100%; height: 340px; position: relative; margin-bottom: 20px;}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide1 .item_img {background-image: url(../images/product/come_item_1.jpg);}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide2 .item_img {background-image: url(../images/product/come_item_2.jpg);}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide3 .item_img {background-image: url(../images/product/come_item_1.jpg);}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide4 .item_img {background-image: url(../images/product/come_item_2.jpg);}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_img .noti {position: absolute; top: 16px; right: 16px;}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_img .noti img {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide1 {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide2 {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide3 {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide4 {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item .item_img {width: 100%; height: 340px; position: relative; margin-bottom: 20px;}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item .item_img .noti {position: absolute; top: 16px; right: 16px;}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item .item_img .noti img {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .artist_name {display: block; font-weight: 600; color: #555;}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info{}
@@ -205,15 +189,15 @@
     display: inline-block; background-color: #F5F8FF; padding: 4px;
     font-size: 0.88rem; color: #555;
 }
-#wrap main .coming_container .coming_right .noti_btn .moer_btn {}
-#wrap main .coming_container .coming_right .noti_btn .moer_btn a {
+#wrap main .coming_container .coming_right .noti_btn .more_btn {}
+#wrap main .coming_container .coming_right .noti_btn .more_btn a {
     display: flex; flex-flow: row nowrap;
     align-items: center; justify-content: space-between;
     height: 64px; width: 380px;
     padding: 10px 20px; border: 1px solid #ddd;
 }
-#wrap main .coming_container .coming_right .noti_btn .moer_btn a .btn_txt {}
-#wrap main .coming_container .coming_right .noti_btn .moer_btn a .btn_txt img {}
+#wrap main .coming_container .coming_right .noti_btn .more_btn a .btn_txt {}
+#wrap main .coming_container .coming_right .noti_btn .more_btn a .btn_txt img {}
 /* ----------------------------------------------------------6. new */
 #wrap main .new_container {
     width: 100%;
@@ -229,42 +213,30 @@
 #wrap main .new_container .contents .title .title_left p {}
 #wrap main .new_container .contents .add_btn {}
 #wrap main .new_container .contents .add_btn img {}
-#wrap main .new_container .contents .new_wrap {width: 1760px; margin-bottom: 160px;}
+#wrap main .new_container .contents .new_wrap {max-width: 1760px; margin-bottom: 160px;}
 #wrap main .new_container .contents .new_wrap .new_swiper {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide {}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img {
-    width: 100%; height: 425px; 
-    position: relative; margin-bottom: 20px;
-    background-size: cover;
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide1 {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide2 {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide3 {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide4 {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide5 {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide6 {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item {
+    margin-bottom: 20px; position: relative;
 }
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide1 .item_img {
-    background-image: url(../images/product/new_item_1.jpg); 
-}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide2 .item_img {
-    background-image: url(../images/product/new_item_2.jpg);
-}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide3 .item_img {
-    background-image: url(../images/product/new_item_3.jpg);
-}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide4 .item_img {
-    background-image: url(../images/product/new_item_4.jpg);
-}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide5 .item_img {
-    background-image: url(../images/product/new_item_1.jpg);
-}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide6 .item_img {
-    background-image: url(../images/product/new_item_2.jpg);
-}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .like {position: absolute; top: 16px; right: 16px;}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .like img {}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .badge {
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .item_img {display: block; flex: 1;}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .item_img img {width: 100%;}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .like {position: absolute; top: 16px; right: 16px;}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .like img {}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .badge {
     display: flex; flex-flow: row nowrap;
-    position: absolute; left: 0; bottom: 0;
+    position: absolute; left: 0; bottom: 3px;
 }
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .badge p {padding: 8px; color: #fff; font-weight: 500;}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .badge p:first-child {background-color: #000;}
-#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_img .badge p:last-child {background-color: #1C4797;}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .badge p {padding: 8px; color: #fff; font-weight: 500;}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .badge p:first-child {background-color: #000;}
+#wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item .badge p:last-child {background-color: #1C4797;}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .artist_name {
     display: inline-block; 
@@ -312,34 +284,20 @@
     gap: 20px;
 }
 #wrap main .product .product_right .product_list .list {}
-#wrap main .product .product_right .product_list .list .item_img {
-    width: 100%; height: 340px; position: relative;
+#wrap main .product .product_right .product_list .list1 {}
+#wrap main .product .product_right .product_list .list2 {}
+#wrap main .product .product_right .product_list .list3 {}
+#wrap main .product .product_right .product_list .list4 {}
+#wrap main .product .product_right .product_list .list5 {}
+#wrap main .product .product_right .product_list .list6 {}
+#wrap main .product .product_right .product_list .list7 {}
+#wrap main .product .product_right .product_list .list8 {}
+#wrap main .product .product_right .product_list .list .item {}
+#wrap main .product .product_right .product_list .list .item .item_img {
+    width: 100%; position: relative;
     margin-bottom: 20px; background-size: cover;
 }
-#wrap main .product .product_right .product_list .list1 .item_img {
-    background-image: url(../images/product/product_item_1.jpg); 
-}
-#wrap main .product .product_right .product_list .list2 .item_img {
-    background-image: url(../images/product/product_item_2.jpg);
-}
-#wrap main .product .product_right .product_list .list3 .item_img {
-    background-image: url(../images/product/product_item_3.jpg);
-}
-#wrap main .product .product_right .product_list .list4 .item_img {
-    background-image: url(../images/product/product_item_4.jpg);
-}
-#wrap main .product .product_right .product_list .list5 .item_img {
-    background-image: url(../images/product/product_item_5.png);
-}
-#wrap main .product .product_right .product_list .list6 .item_img {
-    background-image: url(../images/product/product_item_6.jpg);
-}
-#wrap main .product .product_right .product_list .list7 .item_img {
-    background-image: url(../images/product/product_item_7.jpg);
-}
-#wrap main .product .product_right .product_list .list8 .item_img {
-    background-image: url(../images/product/product_item_8.jpg);
-}
+#wrap main .product .product_right .product_list .list .item .item_img img {width: 100%; height: 340px}
 #wrap main .product .product_right .product_list .list .item_img .like {position: absolute; top: 16px; right: 16px;}
 #wrap main .product .product_right .product_list .list .item_img .like img {}
 #wrap main .product .product_right .product_list .list .item_info {}
@@ -407,31 +365,20 @@
 #wrap main .mdpick .mdpick_right .mdpick_swiper {}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper {}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide {width: 100%;}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item_img {
-    position: relative;
-    width: 100%; height: 340px;
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item{margin-bottom: 20px;}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item .item_img {
+    position: relative; flex: 1;
     margin-bottom: 20px; background-size: cover;
 }
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item_img .like {position: absolute; top: 16px; right: 16px;}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item_img .like img {}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide1 .item_img {
-    background-image: url(../images/product/mdpick_item_1.png); 
-}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide2 .item_img {
-    background-image: url(../images/product/mdpick_item_2.png);
-}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide3 .item_img {
-    background-image: url(../images/product/mdpick_item_3.png);
-}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide4 .item_img {
-    background-image: url(../images/product/mdpick_item_4.png);
-}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide5 .item_img {
-    background-image: url(../images/product/mdpick_item_1.png);
-}
-#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide6 .item_img {
-    background-image: url(../images/product/mdpick_item_2.png);
-}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item .item_img img {width: 100%;}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item .like {position: absolute; top: 16px; right: 16px;}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item .like img {}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide1 {}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide2 {}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide3 {}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide4 {}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide5 {}
+#wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .slide6 {}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item_info {}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item_info .artist_name {display: block; font-weight: 700; color: #555;}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item_info .artist_name,
@@ -460,7 +407,7 @@
 #wrap main .event .contents .add_btn img {}
 #wrap main .event .contents .event_list {
     display: flex; flex-flow: row nowrap;
-    width: 100%;
+    
 }
 #wrap main .event .contents .event_list li {
     background-size: cover;
@@ -468,7 +415,7 @@
     text-align: center;
     }
 #wrap main .event .contents .event_list li > a {
-    display: inline-block; width: 100%;
+    display: inline-block;
     padding-top: 150px;
 }
 #wrap main .event .contents .event_list .list1 {background-image: url(../images/product/event_2.jpg);}
