@@ -13,30 +13,49 @@ const bestSwiper = new Swiper(best, {
 })
 const heroBnrSwiper = new Swiper(heroBnr, {
     loop: true,
-    // pagination:{
-    //     el:'.hero .page',
-    //     type:'fraction',
-    // },
-    // navigation:{
-    //     prevEl:'.hero .prev',
-    //     nextEl:'.hero .next',
-    // },
-    // scrollbar:{
-    //     el:'.hero .scroll',
-    // },
+    pagination:{
+        el:'.hero .page',
+        type:'fraction',
+    },
+    navigation:{
+        prevEl:'.hero .prev',
+        nextEl:'.hero .next',
+    },
+    scrollbar:{
+        el:'.hero .scroll',
+    },
 })
 const comingSwiper = new Swiper(coming, {
     loop: true,
     slidesPerView: 2,
     spaceBetween: 20,
+    pagination: {
+        el :'.coming_wrap .page',
+        type:'fraction',
+    },
+    navigation:{
+        prevEl:'.coming_wrap .prev',
+        nextEl:'.coming_wrap .next',
+    },
+    scrollbar:{
+        el:'.coming_wrap .scroll'
+    },
 })
 const newSwiper = new Swiper(newslide, {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 20,
+    pagination:{
+        el : '.new_wrap .page',
+        type:'fraction',
+    },
+    scrollbar:{
+        el:'.new_wrap .scroll'
+    },
 })
 const mdpickSwiper = new Swiper(mdpick, {
     loop:true,
     slidesPerView: 4,
     spaceBetween: 20,
+
 })

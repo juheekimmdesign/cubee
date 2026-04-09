@@ -16,3 +16,8 @@
 ## 2026/04/07
 * css 수정
 ### 수정사항
+
+
+## 2026/04/09
+* common 수정
+* `gnb 서브 메뉴` html 추가, `pagination-scroll-navigation` JS추가

@@ -45,23 +45,73 @@
                 <ul class="gnb_depth1"><!-- hover -->
                     <li>
                         <a href="#">ARTIST</a>
-                        <!-- <ul class="lnb">
+                        <ul class="gnb_depth2">
                             <li><a href="#">i-dle</a></li>
                             <li><a href="#">NOWZ</a></li>
                             <li><a href="#">LIGHTSUM</a></li>
-                            <li>
-                                <a href="#" class="nav_bnr">
-                                    <div>
+                            <li class="gnb_bnr">
+                                <a href="#">
+                                    <div class="bnr_txt">
                                         <span>idle</span>
                                         <img src="#" alt="더보기">
                                     </div>
-                                    <p><img src="#" alt=""></p>
+                                    <p class="gnb_bnr_img"><img src="#" alt=""></p>
                                     <p>Mono (Feat. skaiwater)</p>
                                 </a>
                             </li>
-                        </ul> -->
+                        </ul>
                     </li>
-                    <li><a href="#">PRODUCT</a></li>
+                    <li>
+                        <a href="#">PRODUCT</a>
+                        <!-- <ul class="gnb_depth2">
+                            <li><a href="#">ALL</a></li>
+                            <li>
+                                <a href="#">MUSIC</a>
+                                <ul class="gnb_depth3">
+                                        <li><a href="#">CD</a></li>
+                                        <li><a href="#">DVD</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">PHOTO</a>
+                                <ul class="gnb_depth3">
+                                        <li><a href="#">Photo Card</a></li>
+                                        <li><a href="#">Photo Book</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">STATIONERY</a>
+                                <ul class="gnb_depth3">
+                                        <li><a href="#">OFFICE</a></li>
+                                        <li><a href="#">SKICKER</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">ACC</a>
+                                <ul class="gnb_depth3">
+                                        <li><a href="#">KEYRING</a></li>
+                                        <li><a href="#">Clothing</a></li>
+                                        <li><a href="#">Phone Case</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">CHEERINGS</a>
+                                <ul class="gnb_depth3">
+                                        <li><a href="#">LIGHTSTICK</a></li>
+                                </ul>
+                            </li>
+                        </ul> -->
+                        <!-- <div class="gnb_bnr">
+                            <a href="#">
+                                <div class="bnr_txt">
+                                    <span>TO DAY, MD PICK!</span>
+                                    <img src="#" alt="더보기">
+                                </div>
+                                <p class="gnb_bnr_img"><img src="#" alt=""></p>
+                                <p>행운을 가져다주는, NOWZ LUCKY SHOP 카드지갑!</p>
+                            </a>
+                        </div> -->
+                    </li>
                     <li><a href="#">EVENT</a></li>
                     <li><a href="#">NOTICE</a></li>
                     <!-- 서브메뉴 준비중 -->
@@ -157,11 +207,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="best_right">
+                <div class="item best_right">
                     <div class="swiper best_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/best_item_1.jpg" alt=""></a>
                                     <p class="rank">1</p>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
@@ -176,7 +226,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide2">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/best_item_2.jpg" alt=""></a>
                                     <p class="rank">2</p>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
@@ -191,7 +241,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide3">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/best_item_3.jpg" alt=""></a>
                                     <p class="rank">3</p>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
@@ -206,7 +256,7 @@
                                 </div>
                             </div>                            
                             <div class="swiper-slide slide4">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/best_item_4.jpg" alt=""></a>
                                     <p class="rank">4</p>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
@@ -221,7 +271,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide5">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/best_item_1.jpg" alt=""></a>
                                     <p class="rank">5</p>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
@@ -236,7 +286,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide6">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/best_item_2.jpg" alt=""></a>
                                     <p class="rank">6</p>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
@@ -261,14 +311,14 @@
                 </div>
                 <div class="contents coming_right">
                     <div class="title">
-                        <h1>COMING SOON !</h1>
+                        <h1>COMING SOON!</h1>
                         <p><span>i-dle의 MININI</span>출시가<span>7일</span>남았어요!</p>
                     </div>
-                    <div class="coming_wrap">
+                    <div class="item coming_wrap">
                         <div class="swiper coming_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1">
-                                    <div class="item">
+                                    <div class="item_list">
                                         <a href="#" class="item_img"><img src="./images/product/come_item_1.jpg" alt=""></a>
                                         <a href="#" class="noti"><img src="./images/product/noti.svg" alt="오픈알림"></a>
                                     </div>
@@ -282,7 +332,7 @@
                                     </div>
                                 </div>    
                                 <div class="swiper-slide slide2">
-                                    <div class="item">
+                                    <div class="item_list">
                                         <a href="#" class="item_img"><img src="./images/product/come_item_2.jpg" alt=""></a>
                                         <a href="#" class="noti"><img src="./images/product/noti.svg" alt="오픈알림"></a>
                                     </div>
@@ -296,7 +346,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide3">
-                                    <div class="item">
+                                    <div class="item_list">
                                         <a href="#" class="item_img"><img src="./images/product/come_item_1.jpg" alt=""></a>
                                         <a href="#" class="noti"><img src="./images/product/noti.svg" alt="오픈알림"></a>
                                     </div>
@@ -310,7 +360,7 @@
                                     </div>
                                 </div>    
                                 <div class="swiper-slide slide4">
-                                    <div class="item">
+                                    <div class="item_list">
                                         <a href="#" class="item_img"><img src="./images/product/come_item_2.jpg" alt=""></a>
                                         <a href="#" class="noti"><img src="./images/product/noti.svg" alt="오픈알림"></a>
                                     </div>
@@ -350,11 +400,11 @@
                         </div>
                         <a href="#" class="add_btn"><img src="./images/product/add_btn.svg" alt="더보기"></a>
                     </div>
-                    <div class="new_wrap">
+                    <div class="item new_wrap">
                         <div class="swiper new_swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1">
-                                    <div class="item"><!-- background img -->
+                                    <div class="item_list"><!-- background img -->
                                         <a href="#" class="item_img"><img src="./images/product/new_item_1.jpg" alt=""></a>
                                         <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                         <div class="badge">
@@ -371,7 +421,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide2">
-                                    <div class="item"><!-- background img -->
+                                    <div class="item_list"><!-- background img -->
                                         <a href="#" class="item_img"><img src="./images/product/new_item_2.jpg" alt=""></a>
                                         <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                         <div class="badge">
@@ -388,7 +438,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide3">
-                                    <div class="item"><!-- background img -->
+                                    <div class="item_list"><!-- background img -->
                                         <a href="#" class="item_img"><img src="./images/product/new_item_3.jpg" alt=""></a>
                                         <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                         <div class="badge">
@@ -405,7 +455,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide4">
-                                    <div class="item"><!-- background img -->
+                                    <div class="item_list"><!-- background img -->
                                         <a href="#" class="item_img"><img src="./images/product/new_item_4.jpg" alt=""></a>
                                         <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                         <div class="badge">
@@ -422,7 +472,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide5">
-                                    <div class="item"><!-- background img -->
+                                    <div class="item_list"><!-- background img -->
                                         <a href="#" class="item_img"><img src="./images/product/new_item_1.jpg" alt=""></a>
                                         <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                         <div class="badge">
@@ -439,7 +489,7 @@
                                     </div>
                                 </div>
                                 <div class="swiper-slide slide6">
-                                    <div class="item"><!-- background img -->
+                                    <div class="item_list"><!-- background img -->
                                         <a href="#" class="item_img"><img src="./images/product/new_item_2.jpg" alt=""></a>
                                         <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                         <div class="badge">
@@ -485,10 +535,10 @@
                     </div>
                     <div class="more_btn"><a href="#"><p class="txt">더보기</p><img src="./images/product/more_down.svg" alt="더보기"></a></div>
                 </div>
-                <div class="product_right">
+                <div class="item product_right">
                     <div class="product_list">
                         <div class="list list1">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_1.jpg" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -502,7 +552,7 @@
                             </div>
                         </div>
                         <div class="list list2">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_2.jpg" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -516,7 +566,7 @@
                             </div>
                         </div>
                         <div class="list list3">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_3.jpg" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -530,7 +580,7 @@
                             </div>
                         </div>
                         <div class="list list4">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_4.jpg" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -544,7 +594,7 @@
                             </div>
                         </div>
                         <div class="list list5">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_5.png" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -558,7 +608,7 @@
                             </div>
                         </div>
                         <div class="list list6">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_6.jpg" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -572,7 +622,7 @@
                             </div>
                         </div>
                         <div class="list list7">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_7.jpg" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -586,7 +636,7 @@
                             </div>
                         </div>
                         <div class="list list8">
-                            <div class="item">
+                            <div class="item_list">
                                 <a href="#" class="item_img"><img src="./images/product/product_item_8.jpg" alt=""></a>
                                 <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                             </div>
@@ -626,11 +676,11 @@
                     </div>
                     <div class="more_btn"><a href="#"><p class="txt">더보기</p><img src="./images/product/more_btn.svg" alt="더보기"></a></div>
                 </div>
-                <div class="mdpick_right">
+                <div class="item mdpick_right">
                     <div class="swiper mdpick_swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide slide1">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/mdpick_item_1.png" alt=""></a>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                 </div>
@@ -644,7 +694,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide2">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/mdpick_item_2.png" alt=""></a>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                 </div>
@@ -658,7 +708,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide3">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/mdpick_item_3.png" alt=""></a>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                 </div>
@@ -672,7 +722,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide4">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/mdpick_item_4.png" alt=""></a>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                 </div>
@@ -686,7 +736,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide5">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/mdpick_item_1.png" alt=""></a>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                 </div>
@@ -700,7 +750,7 @@
                                 </div>
                             </div>
                             <div class="swiper-slide slide6">
-                                <div class="item">
+                                <div class="item_list">
                                     <a href="#" class="item_img"><img src="./images/product/mdpick_item_2.png" alt=""></a>
                                     <a href="#" class="like"><img src="./images/product/like.svg" alt="좋아요"></a>
                                 </div>
