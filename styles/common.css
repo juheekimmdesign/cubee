@@ -27,15 +27,15 @@
     height: 80px; padding: 0 40px;
     position: relative; z-index: 999;
     width: 100%;
+    border-bottom: 1px solid #eee;
 }
 #wrap header h1 {width: 244px;}
 #wrap header h1 a {}
 #wrap header h1 a img {width: 100%;}
 /* ==================================================================== gnb 메뉴 시작 */
 #wrap header #gnb {
-    background-color: aquamarine;
     position: absolute; left: 50%; top:0; transform: translateX(-50%);
-    width: 100%; border-bottom: 1px solid #f9f9f9;
+    width: 100%;
 }
 #wrap header #gnb .gnb_depth1 {
     display: flex; flex-flow: row nowrap;
@@ -43,23 +43,22 @@
     
 }
 #wrap header #gnb .gnb_depth1 > li {}
-#wrap header #gnb .gnb_depth1 > li {}
+/* #wrap header #gnb .gnb_depth1 > li:nth-child(2) div {display: none;} 서브메뉴 확인*/
 #wrap header #gnb .gnb_depth1 > li > a {
     display: block;
     font-weight: 500;
     line-height: 80px; 
 }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container {
-    background-color: aqua; width: 100%;  
     
 }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap {
     display: flex; flex-flow: row nowrap;
     justify-content: center; gap: 40px;
-    background-color: yellow; 
+    background-color:#fff; 
     position: absolute; top: 80px; left: 0;
     width: 100%;
-    padding: 20px 0;  height: 300px;
+    padding: 30px 0;  height: 300px;
 }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2{
     display: flex; flex-flow: row nowrap;
@@ -77,11 +76,14 @@
 }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr {}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a {}
-#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_txt {}
-#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_txt span {}
-#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_txt .bnr_more {}
-#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_img {}
-#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a p {}
+#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_txt {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    background-color: #1e1e1e; padding: 4px 10px;
+}
+#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_txt p {font-size: 0.69rem; color: #fff;}
+#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_txt > a {}
+#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_img {width: 100%;}
+#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a p {font-size: 0.69rem;}
 
 /* ==================================================================== 공통 lnb(검색, 장바구니, 회원정보) */
 #wrap header .lnb {
