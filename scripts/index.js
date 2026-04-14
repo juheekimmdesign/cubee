@@ -16,6 +16,13 @@ const heroBnrSwiper = new Swiper(heroBnr, {
     pagination:{
         el:'.hero .page',
         type:'fraction',
+        renderFraction:function(current, total){
+            console.log(current, total);
+            let customPage = `<span class=${current}</span>`;
+            customPage += `<span></span>`
+            customPage += `<span class=${total}></span>`;
+            return customPage;
+        },
     },
     navigation:{
         prevEl:'.hero .prev',
