@@ -43,15 +43,15 @@
     
 }
 #wrap header #gnb .gnb_depth1 > li {}
-/* #wrap header #gnb .gnb_depth1 > li:nth-child(2) div {display: none;} 서브메뉴 확인*/
 #wrap header #gnb .gnb_depth1 > li > a {
     display: block;
     font-weight: 500;
     line-height: 80px; 
 }
-#wrap header #gnb .gnb_depth1 > li > .depth2_container {
-    
-}
+/* hover 시 gnb 하위 메뉴 열림 */
+#wrap header #gnb .gnb_depth1 > li > .depth2_container {display: none;}
+#wrap header #gnb .gnb_depth1 > li:nth-child(1):hover > .depth2_container {display: block;}
+#wrap header #gnb .gnb_depth1 > li:nth-child(2):hover > .depth2_container {display: block;}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap {
     display: flex; flex-flow: row nowrap;
     justify-content: center; gap: 40px;
@@ -64,12 +64,14 @@
     display: flex; flex-flow: row nowrap;
     }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li {}
+#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li:hover > a {color: #1C4797;}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > a {
     display: inline-block; width: 120px; line-height: 52px; text-align: center;
     font-size: 0.88rem; font-weight: 500;
 }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 {}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 > li {}
+#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 > li:hover > a {color: #1C4797;}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 > li > a {
     display: inline-block; width: 120px; line-height: 52px; text-align: center;
     font-size: 0.75rem;

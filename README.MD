@@ -21,3 +21,6 @@
 ## 2026/04/09
 * common 수정
 * `gnb 서브 메뉴` html 추가, `pagination-scroll-navigation` JS추가
+
+## 2026/04/14
+* swiper 수정

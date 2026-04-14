@@ -23,11 +23,26 @@
 #wrap main .hero_bnr .hero .swiper-wrapper .slide1 {background-image: url(../images/product/hero_bnr_01.jpg);}
 #wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_01.jpg);}
 #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_01.jpg);}
-#wrap main .hero_bnr .hero .prev {}
-#wrap main .hero_bnr .hero .next {}
-#wrap main .hero_bnr .hero .page_scroll {}
-#wrap main .hero_bnr .hero .page_scroll .page {}
-#wrap main .hero_bnr .hero .page_scroll .scroll {}
+#wrap main .hero_bnr .hero .prev,
+#wrap main .hero_bnr .hero .next {color:#fff; background-image: url(../images/common/prev_next.svg);
+    background-size: contain; background-repeat: no-repeat;
+}
+#wrap main .hero_bnr .hero .prev {position: absolute; top: 50%; left: 160px; transform: translateY(-50%) scale(0.6);}
+#wrap main .hero_bnr .hero .next {position: absolute; top: 50%; right: 160px; transform: translateY(-50%) scale(-0.6);}
+#wrap main .hero_bnr .hero .prev svg {display: none;}
+#wrap main .hero_bnr .hero .next svg {display: none;}
+#wrap main .hero_bnr .hero .page_scroll {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    position: relative; bottom: 50px;}
+#wrap main .hero_bnr .hero .page_scroll .page {font-size: 0.88rem;}
+#wrap main .hero_bnr .hero .page_scroll .page::after {
+    content: ''; display: block; width: 1px; height: 8px;
+    background-color: #aaa; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);
+}
+#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1);}
+#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.5);}
+#wrap main .hero_bnr .hero .page_scroll .scroll {width: 600px;}
+#wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar-drag {width: 200px;}
 /* ---------------------------------------------------------- 2.artist */
 #wrap main .artist {
     max-width: 1760px; margin: 80px auto 160px;
@@ -137,8 +152,8 @@
 #wrap main .coming_container .coming_right .title p {font-size: 1.25rem; color: #555;}
 #wrap main .coming_container .coming_right .title p span {font-weight: 700;color: #555;}
 #wrap main .coming_container .coming_right .title p span:last-child {color: #1C4797;}
-#wrap main .coming_container .coming_right .coming_wrap {position: relative; margin-bottom: 160px; overflow: hidden; width:100%;}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper {width: 700px;}
+#wrap main .coming_container .coming_right .coming_wrap {position: relative; margin-bottom: 160px; overflow: hidden; width:100%; padding: 0 80px;}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper {width: 100%; height: 100%;}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide1 {}
@@ -160,10 +175,20 @@
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span:first-child {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span:last-child {}
-#wrap main .coming_container .coming_right .coming_wrap .prev {}
-#wrap main .coming_container .coming_right .coming_wrap .next {}
-#wrap main .coming_container .coming_right .coming_wrap .page_scroll {}
-#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page {}
+#wrap main .coming_container .coming_right .coming_wrap .prev,
+#wrap main .coming_container .coming_right .coming_wrap .next {position: absolute; top: 40%; background-image: url(../images/common/prev_next_b.svg);}
+#wrap main .coming_container .coming_right .coming_wrap .prev {left: -16px;}
+#wrap main .coming_container .coming_right .coming_wrap .next {right: -16px; transform: scale(-1);}
+#wrap main .coming_container .coming_right .coming_wrap .prev svg,
+#wrap main .coming_container .coming_right .coming_wrap .next svg {display: none;}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll {position: relative; }
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page {font-size: 0.88rem;}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page::after {
+    content: ''; display: block; width: 1px; height: 8px;
+    background-color: #aaa; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);
+}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-current {color: #1C4797;}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-total {color: #aaa;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll {}
 #wrap main .coming_container .coming_right .noti_btn {
     display: flex; flex-flow: column nowrap; align-items: center; gap: 24px;
@@ -237,6 +262,16 @@
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info h1 {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info .price {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info .price del {color: #555; font-size: 0.75rem;}
+#wrap main .new_container .contents .new_wrap .page_scroll {}
+#wrap main .new_container .contents .new_wrap .page_scroll .page {}
+#wrap main .new_container .contents .new_wrap .page_scroll .page::after {
+    content: ''; display: block; width: 1px; height: 8px;
+    background-color: #aaa; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%);
+}
+#wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1);}
+#wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.6);}
+
+#wrap main .new_container .contents .new_wrap .page_scroll .scroll {}
 /* -------------------------------------------------------------------------------- 7.product */
 #wrap main .product {
     display: flex; flex-flow: row nowrap;
