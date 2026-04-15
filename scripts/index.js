@@ -13,13 +13,16 @@ const bestSwiper = new Swiper(best, {
 })
 const heroBnrSwiper = new Swiper(heroBnr, {
     loop: true,
+    scrollbar:{
+        el:'.hero .scroll',
+    },
     pagination:{
         el:'.hero .page',
         type:'fraction',
         renderFraction:function(current, total){
             console.log(current, total);
-            let customPage = `<span class=${current}</span>`;
-            customPage += `<span></span>`
+            let customPage = `<span class=${current}></span>`;
+            customPage += `<span></span>`;
             customPage += `<span class=${total}></span>`;
             return customPage;
         },
@@ -27,9 +30,6 @@ const heroBnrSwiper = new Swiper(heroBnr, {
     navigation:{
         prevEl:'.hero .prev',
         nextEl:'.hero .next',
-    },
-    scrollbar:{
-        el:'.hero .scroll',
     },
 })
 const comingSwiper = new Swiper(coming, {
@@ -39,6 +39,13 @@ const comingSwiper = new Swiper(coming, {
     pagination: {
         el :'.coming_wrap .page',
         type:'fraction',
+        renderFraction:function(current, total){
+            console.log(current, total);
+            let customPage = `<span class=${current}></span>`;
+            customPage += `<span></span>`;
+            customPage += `<span class=${total}></span>`;
+            return customPage;
+        }
     },
     navigation:{
         prevEl:'.coming_wrap .prev',
@@ -55,6 +62,13 @@ const newSwiper = new Swiper(newslide, {
     pagination:{
         el : '.new_wrap .page',
         type:'fraction',
+        renderFraction:function(current, total){
+            console.log(current, total);
+            let customPage = `<span class=${current}></span>`;
+            customPage += `<span></span>`;
+            customPage += `<span class=${total}></span>`;
+            return customPage;
+        }
     },
     scrollbar:{
         el:'.new_wrap .scroll'
