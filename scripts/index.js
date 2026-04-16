@@ -4,9 +4,49 @@ const best = document.querySelector('.best_right .best_swiper');
 const coming = document.querySelector ('.coming_wrap .coming_swiper');
 const newslide = document.querySelector('.new_wrap .new_swiper');
 const mdpick = document.querySelector('.mdpick_right .mdpick_swiper');
-const artistSelect = document.querySelectorAll('.artist_right a img')
-console.log( heroBnr, best , coming, newslide, mdpick, artistSelect[0],artistSelect[1],artistSelect[2]);
+const artistSelect = document.querySelectorAll('.artist_right a img');
+const artistMoreBtn = document.querySelector('.artist_left .more_btn');
+const notiBtn = document.querySelector('.noti_btn .more_btn');
+console.log( heroBnr, best , coming, newslide, mdpick, artistSelect[0],artistSelect[1],artistSelect[2], artistMoreBtn, notiBtn);
 
+
+
+
+//artist 더보기Btn에 마우스 올렸을때 + 나갔을때 이벤트 설정 
+artistMoreBtn.addEventListener('mouseover', function(){
+    console.log('마우스 올린 이벤트 확인');
+    artistMoreBtn.children[0].children[0].style.color = '#1c4797';
+    artistMoreBtn.children[0].style.borderBottom= '1px solid #1c4797';
+    artistMoreBtn.children[0].children[1].src = "./images/product/more_active.svg"
+});
+artistMoreBtn.addEventListener('mouseout', function(){
+    artistMoreBtn.children[0].children[0].style.color = '#1e1e1e';
+    artistMoreBtn.children[0].style.borderBottom= '1px solid #1e1e1e';
+    artistMoreBtn.children[0].children[1].src = "./images/product/more_btn.svg"
+});
+/* 
+artistMoreBtn.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('클릭확인');
+    artistMoreBtn.children[0].style.color = '#1c4797';
+    artistMoreBtn.children[0].children[1].src = "./images/product/more_active.svg"
+}) */
+
+//comingsoon 오픈알림받기Btn에 마우스 올렸을때 + 나갔을때 이벤트 설정 
+notiBtn.addEventListener('mouseover', function(){
+    console.log('마우스 올린 이벤트 확인');
+    notiBtn.children[0].children[0].style.color = '#1c4797';
+    notiBtn.children[0].style.border= '1px solid #1c4797';
+    notiBtn.children[0].children[1].src = "./images/product/more_active.svg"
+});
+notiBtn.addEventListener('mouseout', function(){
+    console.log('마우스 올린 이벤트 확인');
+    notiBtn.children[0].children[0].style.color = '#1e1e1e';
+    notiBtn.children[0].style.border= '1px solid #ddd';
+    notiBtn.children[0].children[1].src = "./images/product/more_btn.svg"
+});
+
+//artist_right 아티스트 product_list로가는 btn 마우스 올렸을때, 나갔을 때 이벤트 설정 
 artistSelect[0].addEventListener('mouseover',function(){
     artistSelect[0].src = './images/product/artist_04.jpg';
 });

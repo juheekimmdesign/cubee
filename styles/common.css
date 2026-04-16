@@ -40,7 +40,7 @@
 }
 #wrap header #gnb .gnb_depth1 {
     display: flex; flex-flow: row nowrap;
-    gap: 40px; justify-content: center; 
+    justify-content: center; 
     
 }
 #wrap header #gnb .gnb_depth1 > li {}
@@ -48,6 +48,7 @@
     display: block;
     font-weight: 500;
     line-height: 80px; 
+    padding: 0 20px; /* gnbBg mouseover 유지하는 길이 */
 }
 /* hover 시 gnb 하위 메뉴 열림 */
 #wrap header #gnb .gnb_depth1 > li > .depth2_container {display: none;}
@@ -64,14 +65,12 @@
     display: flex; flex-flow: row nowrap;
     }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li {}
-#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li:hover > a {color: #1C4797;}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > a {
     display: inline-block; width: 120px; line-height: 52px; text-align: center;
     font-size: 0.88rem; font-weight: 500;
 }
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 {}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 > li {}
-#wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 > li:hover > a {color: #1C4797;}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_depth2 > li > .gnb_depth3 > li > a {
     display: inline-block; width: 120px; line-height: 52px; text-align: center;
     font-size: 0.75rem;
@@ -126,16 +125,16 @@
 #wrap main .container .contents .contents_wrap .tab_menu li .active img {display: block;} */
 #wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
 /* hover 시 탭메뉴 컬러변경 */
-#wrap main .container .contents .contents_wrap .tab_menu li:hover a {border-bottom: 1px solid #1C4797;}
-#wrap main .container .contents .contents_wrap .tab_menu li:hover a .tab {color: #1C4797;}
+/* #wrap main .container .contents .contents_wrap .tab_menu li:hover a {border-bottom: 1px solid #1C4797;} */
+/* #wrap main .container .contents .contents_wrap .tab_menu li:hover a .tab {color: #1C4797;} */
 #wrap main .container .contents .contents_wrap .tab_menu li:hover img {display: block;}
 /* 더보기 버튼 */
 #wrap main .container .contents_more .more_btn a {
     display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
     height: 64px; width: 100%; padding: 10px 20px; border: 1px solid #ddd;
 }
-#wrap main .container .contents_more .more_btn:hover a {border: 1px solid hsl(219, 69%, 35%);}
-#wrap main .container .contents_more .more_btn:hover a  p {color: #1C4797;}
+/* #wrap main .container .contents_more .more_btn:hover a {border: 1px solid hsl(219, 69%, 35%);} */
+/* #wrap main .container .contents_more .more_btn:hover a  p {color: #1C4797;} */
 /* ==================================================================== 공통 item list 디자인 */
 #wrap main .container .item {}
 #wrap main .container .item .swiper {}

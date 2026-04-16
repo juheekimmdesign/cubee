@@ -101,8 +101,6 @@
     padding: 10px; border-bottom: 1px solid #1e1e1e;
 }
 #wrap main .artist .artist_left .more_btn a .btn_txt {}
-#wrap main .artist .artist_left .more_btn:hover a {padding: 10px; border-bottom: 1px solid #1C4797;}
-#wrap main .artist .artist_left .more_btn:hover a .btn_txt {color: #1C4797;}
 #wrap main .artist .artist_left .more_btn a img {}
 #wrap main .artist .artist_right {
     display: flex; flex-flow: row nowrap; gap: 20px;
@@ -286,9 +284,6 @@
     height: 64px; width: 380px;
     padding: 10px 20px; border: 1px solid #ddd;
 }
-/* hover 시 noti_btn 컬러변경 */
-#wrap main .coming_container .coming_right .noti_btn .more_btn:hover a {border: 1px solid #1C4797;}
-#wrap main .coming_container .coming_right .noti_btn .more_btn:hover a p {color: #1C4797;}
 #wrap main .coming_container .coming_right .noti_btn .more_btn a .btn_txt {}
 #wrap main .coming_container .coming_right .noti_btn .more_btn a .btn_txt img {}
 /* ----------------------------------------------------------6. new */
