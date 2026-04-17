@@ -148,9 +148,9 @@
 #wrap main .best .best_left .contents_wrap .tab_menu .active {}
 #wrap main .best .best_left .contents_wrap .tab_menu li a {}
 #wrap main .best .best_left .contents_wrap .tab_menu li a .tab {}
-#wrap main .best .best_left .contents_wrap .tab_menu li .active {}
-#wrap main .best .best_left .contents_wrap .tab_menu li .active .tab {}
-#wrap main .best .best_left .contents_wrap .tab_menu li .active img {}
+#wrap main .best .best_left .contents_wrap .tab_menu li .active {border-bottom: 1px solid #1C4797;}
+#wrap main .best .best_left .contents_wrap .tab_menu li .active .tab {color: #1C4797;}
+#wrap main .best .best_left .contents_wrap .tab_menu li .active img {display: block;}
 #wrap main .best .best_left .contents_wrap .tab_menu li a img {}
 #wrap main .best .best_right {width: calc(100% - 380px);}
 #wrap main .best .best_right .best_swiper {}

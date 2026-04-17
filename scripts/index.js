@@ -1,7 +1,10 @@
 // index.js
 const heroBnr = document.querySelector('.hero_bnr .hero');//herobnr siwper생성 전 선택변수
 //swiper 생성전 선택변수
-const best = document.querySelector('.best_right .best_swiper');
+const best = document.querySelectorAll('.best_right .best_swiper');
+const bestIdle = document.querySelector('.best_right .idle_swiper');
+const bestNowz = document.querySelector('.best_right .nows_swiper');
+const bestLightsum = document.querySelector('.best_right .lightsum_swiper');
 const coming = document.querySelector ('.coming_wrap .coming_swiper');
 const newslide = document.querySelector('.new_wrap .new_swiper');
 const mdpick = document.querySelector('.mdpick_right .mdpick_swiper');
@@ -15,7 +18,7 @@ const productMoreTab = document.querySelector('.product_left .more_btn');//produ
 const mdTab = document.querySelectorAll('.mdpick_left .tab_menu li');//mdpick 상품분류탭(아티스트별) 선택변수
 const mdMoreTab =document.querySelector('.mdpick_left .more_btn');//mdpick 더보기탭 선택변수
 //console확인//
-console.log( heroBnr, best , coming, newslide, mdpick, );
+console.log( heroBnr, bestIdle, bestNowz, bestLightsum, best,coming, newslide, mdpick);
 console.log('------------------------------------------');
 console.log( artistSelect[0],artistSelect[1],artistSelect[2], artistMoreBtn, notiBtn);
 console.log('------------------------------------------');
@@ -79,8 +82,26 @@ for(let i of productTab){
     })
 }
 
-// bestTab 마우스 올렸을때 나갔을 때 이벤트
 for(let i of bestTab){
+    console.log(i);
+    i.addEventListener('click', function(){
+        console.log('클릭확인');
+        bestSwiperHide();
+        i.cildren[0].style.display='block'
+    })
+    
+}
+function bestSwiperHide(){
+    for(let i of best)i.style.display='none'
+}
+
+
+// best[0].style.display = 'none'
+
+
+
+// bestTab 마우스 올렸을때 나갔을 때 이벤트
+/* for(let i of bestTab){
     console.log(i);
     i.addEventListener('mouseover', function(){
         console.log('마우스올린확인');
@@ -89,11 +110,13 @@ for(let i of bestTab){
         i.children[0].children[1].style.display = 'block';
     })
     i.addEventListener('mouseout', function(){
+        if (i.classList.contains('active')) return;
         i.children[0].children[0].style.color = '#aaa';
         i.children[0].style.borderBottom ='1px solid #f9f9f9';
         i.children[0].children[1].style.display = 'none';
     })
-}
+    
+} */
 
 //artist 더보기Btn에 마우스 올렸을때 + 나갔을때 이벤트 설정 
 artistMoreBtn.addEventListener('mouseover', function(){
@@ -151,11 +174,31 @@ artistSelect[2].addEventListener('mouseout',function(){
     artistSelect[2].src = './images/product/artist_03.jpg';
 });
 
-//상품 목록 swiper생성
-const bestSwiper = new Swiper(best, {
+
+// 1.모두 숨기기
+
+
+
+
+
+// best 상품 목록 swiper생성
+const bestIdleSwiper = new Swiper(bestIdle, {
     slidesPerView: 4,
     spaceBetween: 20,
+    loop:true,
 })
+const bestNowzSwiper = new Swiper(bestNowz, {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop:true,
+})
+const bestLightsumSwiper = new Swiper(bestLightsum, {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop:true,
+})
+
+//상품 목록 swiper생성
 const heroBnrSwiper = new Swiper(heroBnr, {
     loop: true,
     scrollbar:{

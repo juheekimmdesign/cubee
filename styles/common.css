@@ -112,7 +112,9 @@
 #wrap main .container .contents .contents_wrap .title h1 {margin-bottom: 20px; font-family: 'DecaydenceStraight'; font-size: 1.50rem;}
 #wrap main .container .contents .contents_wrap .tab_menu {}
 #wrap main .container .contents .contents_wrap .tab_menu li {}
-#wrap main .container .contents .contents_wrap .tab_menu .active  {color: #1C4797;}
+#wrap main .container .contents .contents_wrap .tab_menu .active {}
+#wrap main .container .contents .contents_wrap .tab_menu .active .tab {}
+#wrap main .container .contents .contents_wrap .tab_menu .active .img {}
 #wrap main .container .contents .contents_wrap .tab_menu li a {
     display: flex; flex-flow: row nowrap;
     align-items: center; justify-content: space-between; 
@@ -120,21 +122,12 @@
     padding: 10px 0; border-bottom: 1px solid #f9f9f9; 
 }
 #wrap main .container .contents .contents_wrap .tab_menu li a .tab {color: #aaa;}
-/* #wrap main .container .contents .contents_wrap .tab_menu li .active {border-bottom: 1px solid #1C4797;}
-#wrap main .container .contents .contents_wrap .tab_menu li .active .tab {color: #1C4797;}
-#wrap main .container .contents .contents_wrap .tab_menu li .active img {display: block;} */
 #wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
-/* hover 시 탭메뉴 컬러변경 */
-/* #wrap main .container .contents .contents_wrap .tab_menu li:hover a {border-bottom: 1px solid #1C4797;} */
-/* #wrap main .container .contents .contents_wrap .tab_menu li:hover a .tab {color: #1C4797;}
-#wrap main .container .contents .contents_wrap .tab_menu li:hover img {display: block;} */
 /* 더보기 버튼 */
 #wrap main .container .contents_more .more_btn a {
     display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
     height: 64px; width: 100%; padding: 10px 20px; border: 1px solid #ddd;
 }
-/* #wrap main .container .contents_more .more_btn:hover a {border: 1px solid hsl(219, 69%, 35%);} */
-/* #wrap main .container .contents_more .more_btn:hover a  p {color: #1C4797;} */
 /* ==================================================================== 공통 item list 디자인 */
 #wrap main .container .item {}
 #wrap main .container .item .swiper {}
