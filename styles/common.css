@@ -126,8 +126,8 @@
 #wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
 /* hover 시 탭메뉴 컬러변경 */
 /* #wrap main .container .contents .contents_wrap .tab_menu li:hover a {border-bottom: 1px solid #1C4797;} */
-/* #wrap main .container .contents .contents_wrap .tab_menu li:hover a .tab {color: #1C4797;} */
-#wrap main .container .contents .contents_wrap .tab_menu li:hover img {display: block;}
+/* #wrap main .container .contents .contents_wrap .tab_menu li:hover a .tab {color: #1C4797;}
+#wrap main .container .contents .contents_wrap .tab_menu li:hover img {display: block;} */
 /* 더보기 버튼 */
 #wrap main .container .contents_more .more_btn a {
     display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;

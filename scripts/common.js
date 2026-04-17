@@ -6,7 +6,7 @@ const gnbDepth1 = document.querySelectorAll('#gnb .gnb_depth1 > li');
 console.log(topBnr, gnbDepth1[0], gnbDepth1[1], gnbDepth1[2], gnbDepth1[3]);
 const gnbDepth2 = document.querySelectorAll('.depth2_container .depth2_wrap .gnb_depth2 > li');
 const gnbDepth3 = document.querySelectorAll('.gnb_depth3 > li > a');
-console.log(gnbDepth2, gnbDepth3, commonTabManu[0].children);
+console.log(gnbDepth2, gnbDepth3);
 
 
 //top배너 스와이퍼 슬라이드
