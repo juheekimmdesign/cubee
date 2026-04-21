@@ -3,10 +3,10 @@
 
 /* --------------------------------------------------------------- 1. hero banner */
 #wrap main {width: 100%;}
-#wrap main .hero_bnr {width: 100%;}
-#wrap main .hero_bnr .hero {height: 700px; position: relative;}
+#wrap main .hero_bnr {width: 100%; }
+#wrap main .hero_bnr .hero {height: 80vh; position: relative;}
 #wrap main .hero_bnr .hero .swiper-wrapper {}
-#wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {}
+#wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover}
 #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{
     max-width: 1400px; width: 100%;
     position: absolute; top: 50%; left: 50%;
@@ -31,57 +31,23 @@
 #wrap main .hero_bnr .hero .next {position: absolute; top: 50%; right: 160px; transform: translateY(-50%) scale(-0.6);}
 #wrap main .hero_bnr .hero .prev svg {display: none;}
 #wrap main .hero_bnr .hero .next svg {display: none;}
-#wrap main .hero_bnr .hero .page_scroll {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    z-index: 10;
-}
-
-#wrap main .hero_bnr .hero .page_scroll .page {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    flex-shrink: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 8px;
-    z-index: 10;
-}
-#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current,
-#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {font-weight: 600; font-size: 0.88rem;}
-#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1);}
-#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {display: inline-block; background:#aaa; width: 1px; height: 8px;}
-#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.6);}
+#wrap main .hero_bnr .hero .page_scroll {}
 #wrap main .hero_bnr .hero .page_scroll .scroll {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    flex: 1;
-    height: 2px;
-    z-index: 10;
-    background: rgba(255,255,255,0.3);
+    top: auto; width: auto; height: auto; left: auto;
+    position: relative;
+    height: 2px; bottom: 50px; left: 50%; width: 600px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3);
 }
-#wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar {
-    flex: 1;
-    position: relative !important;  /* Swiper가 absolute로 강제하는 것 방지 */
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    height: 2px;
-    z-index: 10;
+#wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar-drag {background: rgba(255, 255, 255, 1);}
+#wrap main .hero_bnr .hero .page_scroll .page {
+    bottom: auto; left: auto; top: auto; width: auto;
+    bottom: 40px; right: 30%;
+    display: flex; gap: 8px;
 }
-#wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar-drag {background: rgba(255,255,255,1);}
-
+#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1); font-size: 0.88rem; font-weight: 600;}
+#wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.3); font-size: 0.88rem; font-weight: 600;}
+#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {color: #aaa; font-size: 0.88rem;}
 /* ---------------------------------------------------------- 2.artist */
 #wrap main .artist {
     max-width: 1760px; margin: 80px auto 160px;
@@ -153,7 +119,8 @@
 #wrap main .best .best_left .contents_wrap .tab_menu li .active img {display: block;}
 #wrap main .best .best_left .contents_wrap .tab_menu li a img {}
 #wrap main .best .best_right {width: calc(100% - 380px);}
-#wrap main .best .best_right .best_swiper {}
+#wrap main .best .best_right .best_swiper {display: none;}
+#wrap main .best .best_right .active {display: block;}
 #wrap main .best .best_right .best_swiper .swiper-wrapper {}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .slide1 {}
