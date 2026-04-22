@@ -31,23 +31,29 @@
 #wrap main .hero_bnr .hero .next {position: absolute; top: 50%; right: 160px; transform: translateY(-50%) scale(-0.6);}
 #wrap main .hero_bnr .hero .prev svg {display: none;}
 #wrap main .hero_bnr .hero .next svg {display: none;}
-#wrap main .hero_bnr .hero .page_scroll {}
-#wrap main .hero_bnr .hero .page_scroll .scroll {
-    top: auto; width: auto; height: auto; left: auto;
-    position: relative;
-    height: 2px; bottom: 50px; left: 50%; width: 600px;
+#wrap main .hero_bnr .hero .page_scroll {
+    position: absolute;
+    width: 670px; height: 100px;
+    top: auto;  bottom: 0;  left: 50%; right: auto;
     transform: translateX(-50%);
+    z-index: 999; 
+    display: flex; align-items: center;
+}
+#wrap main .hero_bnr .hero .page_scroll .scroll {
+    background-color: aqua;
+    width: 600px; height: 2px;
+    left: 0; bottom: auto;
     background: rgba(255, 255, 255, 0.3);
 }
 #wrap main .hero_bnr .hero .page_scroll .scroll .swiper-scrollbar-drag {background: rgba(255, 255, 255, 1);}
 #wrap main .hero_bnr .hero .page_scroll .page {
-    bottom: auto; left: auto; top: auto; width: auto;
-    bottom: 40px; right: 30%;
-    display: flex; gap: 8px;
+    display: flex; width: max-content;
+    bottom: auto; left: auto; top: auto; right: 0;
+    gap: 8px;
 }
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1); font-size: 0.88rem; font-weight: 600;}
 #wrap main .hero_bnr .hero .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.3); font-size: 0.88rem; font-weight: 600;}
-#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {color: #aaa; font-size: 0.88rem;}
+#wrap main .hero_bnr .hero .page_scroll .page span:nth-child(2) {display: inline-block; background-color: #aaa; width: 1px; height: 10px;}
 /* ---------------------------------------------------------- 2.artist */
 #wrap main .artist {
     max-width: 1760px; margin: 80px auto 160px;
@@ -145,22 +151,29 @@
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info .badge {}
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span {}
 /* -------------------------------------------------------------------------------------------- 5. comingsoon */
-#wrap main .coming_container { width: 100%; padding: 0 80px 160px 0;}
-#wrap main .coming_container .coming_left {height: 940px; flex:1}
-#wrap main .coming_container .coming_left img {width: 100%;}
+#wrap main .coming_container {
+    width: 100%; margin: 0 80px 160px 0; height: 940px; gap: 40px;
+    justify-content: start;
+}
+#wrap main .coming_container .coming_left {height: 100%; width: 940px; background: yellow;}
+#wrap main .coming_container .coming_left img {width: 100%; height: 100%;}
 #wrap main .coming_container .coming_right {
     display: flex; flex-flow: column nowrap;
-    align-items: center; justify-content: center;
-    width: calc(100% - 940px); flex:0.8; 
+    justify-content: center;
+    align-items: center; gap: 80px;
+    width: 860px;
 
 }
-#wrap main .coming_container .coming_right .title {margin-bottom: 80px; text-align: center;}
+#wrap main .coming_container .coming_right .title {text-align: center;}
 #wrap main .coming_container .coming_right .title h1 {}
 #wrap main .coming_container .coming_right .title p {font-size: 1.25rem; color: #555;}
 #wrap main .coming_container .coming_right .title p span {font-weight: 700;color: #555;}
 #wrap main .coming_container .coming_right .title p span:last-child {color: #1C4797;}
-#wrap main .coming_container .coming_right .coming_wrap {position: relative; margin-bottom: 160px; overflow: hidden; width:100%; padding: 0 80px 80px;}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper {width: 100%; height: 100%;}
+#wrap main .coming_container .coming_right .coming_wrap {
+    position: relative; margin-bottom: 0; overflow: hidden;
+    width:100%; padding: 0 80px 80px;
+}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper {width: 100%; height: 100%; margin-bottom: 10px;}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide1 {}
@@ -168,7 +181,7 @@
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide3 {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .slide4 {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_list .item_img {}
-#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_list .item_img img {}
+#wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_list .item_img img {width: 100%;}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_list .noti {position: absolute; top: 16px; right: 16px;}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_list .noti img {}
 #wrap main .coming_container .coming_right .coming_wrap .coming_swiper .swiper-wrapper .swiper-slide .item_info {}
@@ -190,51 +203,23 @@
 #wrap main .coming_container .coming_right .coming_wrap .prev svg,
 #wrap main .coming_container .coming_right .coming_wrap .next svg {display: none;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    z-index: 10;
+    position: absolute; width: 460px; height: 80px; z-index: 999;
+    left: 50%; right: auto; top: auto; bottom: auto; transform: translateX(-50%);
+    display: flex; align-items: center;
 }
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .page {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    flex-shrink: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
+    display: flex; align-items: center; width: max-content;
+    bottom: auto; left: auto; top: auto; right: 0;
     gap: 8px;
-    z-index: 10;
 }
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-current,
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-total {font-weight: 600; font-size: 0.88rem;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-current {color: #1C4797;}
-#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page span:nth-child(2) {display: inline-block; background:#aaa; width: 1px; height: 8px;}
+#wrap main .coming_container .coming_right .coming_wrap .page_scroll .page span:nth-child(2) {display: inline-block; background-color:#aaa; width: 1px; height: 10px;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .page .swiper-pagination-total {color: #aaa;}
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    flex: 1;
-    height: 2px;
-    z-index: 10;
-}#wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll .swiper-scrollbar{
-    flex: 1;
-    position: relative !important;  /* Swiper가 absolute로 강제하는 것 방지 */
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    height: 2px;
-    z-index: 10;
-    background: #aaa;
+    left: auto; right: auto; top: auto; bottom: auto;
+    width: 400px; height:2px; background: #eee;
 }
 #wrap main .coming_container .coming_right .coming_wrap .page_scroll .scroll .swiper-scrollbar-drag {background: #1C4797;}
 #wrap main .coming_container .coming_right .noti_btn {
@@ -270,7 +255,7 @@
 #wrap main .new_container .contents .add_btn {}
 #wrap main .new_container .contents .add_btn img {}
 #wrap main .new_container .contents .new_wrap {position: relative; max-width: 1760px; margin-bottom: 160px;}
-#wrap main .new_container .contents .new_wrap .new_swiper {}
+#wrap main .new_container .contents .new_wrap .new_swiper {margin-bottom: 40px;}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide {}
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .slide1 {}
@@ -311,47 +296,30 @@
 #wrap main .new_container .contents .new_wrap .new_swiper .swiper-wrapper .swiper-slide .item_info .info .price del {color: #555; font-size: 0.75rem;}
 #wrap main .new_container .contents .new_wrap .page_scroll {
     position: absolute;
-    bottom: -120px;
-    left: 50%;
+    left: 50%; right: auto; top: auto; bottom: auto;
     transform: translateX(-50%);
-    width: 600px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-    z-index: 10;
+    width: 670px; height: 80px;
+    display: flex; align-items: center;
 }
 #wrap main .new_container .contents .new_wrap .page_scroll .page {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    flex-shrink: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 8px;
-    z-index: 10;
+    left: auto; right: 0; top: auto; bottom: auto;
+    display: flex; width: max-content; gap: 8px; align-items: center;
 }
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-current,
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-total {font-weight: 600; font-size: 0.88rem;}
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-current {color: rgba(255,255,255,1);}
 #wrap main .new_container .contents .new_wrap .page_scroll .page .swiper-pagination-total {color: rgba(255,255,255,0.6);}
-#wrap main .new_container .contents .new_wrap .page_scroll .page span:nth-child(2) {display: inline-block; background-color: rgba(255,255,255,0.6); width: 1px; height: 8px;}
+#wrap main .new_container .contents .new_wrap .page_scroll .page span:nth-child(2) {display: inline-block; background-color: rgba(255,255,255,0.6); width: 1px; height: 10px;}
 #wrap main .new_container .contents .new_wrap .page_scroll .scroll {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    width: auto !important;
-    flex: 1;
-    height: 2px;
-    z-index: 10;
-    background: rgba(255, 255, 255, 0.3);}
+    left: 0; right: auto; top: auto; bottom: auto;
+    background: rgba(255, 255, 255, 0.3);
+    width: 600px; height: 2px;
+}
 #wrap main .new_container .contents .new_wrap .page_scroll .scroll .swiper-scrollbar-drag {background: rgba(255,255,255,1);}
 /* -------------------------------------------------------------------------------- 7.product */
 #wrap main .product {
     display: flex; flex-flow: row nowrap;
-    padding: 160px 0 160px 80px; width: 100%;
+    padding: 160px 0 160px 80px; width: 100%; height: 100%;
     overflow: hidden;
 }
 #wrap main .product .product_left {
@@ -389,26 +357,29 @@
 #wrap main .product .product_right .product_list .list8 {}
 #wrap main .product .product_right .product_list .list .item {}
 #wrap main .product .product_right .product_list .list .item .item_img {
+    display: block;
     width: 100%; position: relative;
     margin-bottom: 20px; background-size: cover;
 }
-#wrap main .product .product_right .product_list .list .item_list .item_img img {width: 100%; height: 340px}
-#wrap main .product .product_right .product_list .list .item_list .like {position: absolute; top: 16px; right: 16px;}
+#wrap main .product .product_right .product_list .list .item_list .item_img img {width: 100%}
+#wrap main .product .product_right .product_list .list .item_list .like {
+    position: absolute; top: 16px; right: 16px;
+}
 #wrap main .product .product_right .product_list .list .item_list .like img {}
 #wrap main .product .product_right .product_list .list .item_info {}
-#wrap main .product .product_right .product_list .list .item_info .artist_name {display: block; font-weight: 600; color: #555;}
+#wrap main .product .product_right .product_list .list .item_info .artist_name {display: block; font-weight: 700; color: #555;}
 #wrap main .product .product_right .product_list .list .item_info .info {}
 #wrap main .product .product_right .product_list .list .item_info .artist_name,
 #wrap main .product .product_right .product_list .list .item_info .info h1,
-#wrap main .product .product_right .product_list .list .item_info .info .price {font-size: 0.88rem; margin-bottom: 8px; font-weight: 500;}
-#wrap main .product .product_right .product_list .list .item_info .info h1 {}
+#wrap main .product .product_right .product_list .list .item_info .info .price {font-size: 0.88rem; margin-bottom: 8px; font-weight: 600;}
+#wrap main .product .product_right .product_list .list .item_info .info h1 {color: #555;}
 #wrap main .product .product_right .product_list .list .item_info .info .price {}
 #wrap main .product .product_right .product_list .list .item_info .info .badge {}
 #wrap main .product .product_right .product_list .list .item_info .info .badge span{
     display: inline-block; padding: 4px;
-    font-size: 0.88rem; font-size: 0.69rem;color: #fff;
+    font-size: 0.88rem; font-size: 0.69rem;
+    color: #fff; background-color: #1e1e1e;
 }
-#wrap main .product .product_right .product_list .list .item_info .info .badge span:first-child {background-color: #1e1e1e;}
 #wrap main .product .product_right .product_list .list .item_info .info .badge span:last-child {background-color: #1C4797; margin-left: 8px;}
 /* -------------------------------------------------------------------------------------------------------------8.add_bnr_pay */
 #wrap main .add_bnr_pay {
