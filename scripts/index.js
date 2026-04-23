@@ -1,3 +1,11 @@
+/**
+ * GitHub Repository Phishing Alert Appeal & Project Verification
+이 페이지는 깃허브에서 발생한 피싱 경고 오탐지(False Positive)를 해명하고, 해당 코드가 순수한 학습 및 포트폴리오용임을 증명하기 위해 작성되었습니다.
+ * PROJECT: Portfolio Prototype
+ * WARNING: This script does not process real transactions or user credentials.
+ * All functions are for demonstration purposes only.
+ */
+
 // index.js
 const heroBnr = document.querySelector('.hero_bnr .hero');//herobnr siwper생성 전 선택변수
 //swiper 생성전 선택변수
@@ -89,9 +97,6 @@ for(let i of productTab){
 // 1. tab을 클릭하면 모든 best swiper 사라지기
 // 2. 클릭한 탭의 활성화 고정되고
 // 3. 같은 index 번호를 가진 swiper만 나오기. 
-console.log(typeof bestSwiper);
-
-
 
 for(let tab of bestTabSelect){
     console.log(tab);
