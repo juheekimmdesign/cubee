@@ -430,7 +430,8 @@
 #wrap main .mdpick .mdpick_left .more_btn .tab {}
 #wrap main .mdpick .mdpick_left .more_btn .tab img {}
 #wrap main .mdpick .mdpick_right {width: calc(100% - 380px);}
-#wrap main .mdpick .mdpick_right .mdpick_swiper {}
+#wrap main .mdpick .mdpick_right .mdpick_swiper {display: none;}
+#wrap main .mdpick .mdpick_right .active {display: block;}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper {}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide {width: 100%;}
 #wrap main .mdpick .mdpick_right .mdpick_swiper .swiper-wrapper .swiper-slide .item_list {margin-bottom: 20px;}
