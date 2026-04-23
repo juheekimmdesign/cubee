@@ -1,1 +1,6 @@
 /* responsive.css */
+/* tablet size mediaquary :: 1024 이하일때 */
+@media screen and (max-width:1024px){/* 1024px 이하일때 */
+    
+
+}
