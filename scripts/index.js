@@ -8,15 +8,18 @@
 
 // index.js
 const heroBnr = document.querySelector('.hero_bnr .hero');//herobnr siwper생성 전 선택변수
-//swiper 생성전 선택변수
+//==================================================================swiper 생성전 선택변수
 const best = document.querySelectorAll('.best_right .best_swiper');
 const bestIdle = document.querySelector('.best_right .idle_swiper');
 const bestNowz = document.querySelector('.best_right .nows_swiper');
 const bestLightsum = document.querySelector('.best_right .lightsum_swiper');
 const coming = document.querySelector ('.coming_wrap .coming_swiper');
 const newslide = document.querySelector('.new_wrap .new_swiper');
-const mdpick = document.querySelector('.mdpick_right .mdpick_swiper');
-//tab 선택 변수
+const mdpickIdle = document.querySelector('.mdpick_right .idle_md_swiper');
+const mdpickNowz = document.querySelector('.mdpick_right .nowz_md_swiper');
+const mdpickLightsum = document.querySelector('.mdpick_right .lightsum_md_swiper');
+const mdpickSwiper = document.querySelectorAll('.mdpick_right .mdpick_swiper');
+//===========================================================================tab 선택 변수
 const artistSelect = document.querySelectorAll('.artist_right a img');//artist 상품분류탭(아티스트별) 선택변수
 const artistMoreBtn = document.querySelector('.artist_left .more_btn');//artist 더보기탭 선택변수
 const notiBtn = document.querySelector('.noti_btn .more_btn');//new 오픈알림받기탭 선택변수
@@ -25,30 +28,58 @@ const bestTabSelect = document.querySelectorAll('.best_left .contents_wrap .tab_
 const bestSwiper = document.querySelectorAll('.best_right .best_swiper');
 const productTab = document.querySelectorAll('.product_left .contents_wrap .tab_menu > li');//product 상품분류탭(아이템종류별) 선택변수
 const productMoreTab = document.querySelector('.product_left .more_btn');//product 더보기탭 선택변수
-const mdTab = document.querySelectorAll('.mdpick_left .tab_menu li');//mdpick 상품분류탭(아티스트별) 선택변수
+const mdTab = document.querySelectorAll('.mdpick_left .tab_menu li a');//mdpick 상품분류탭(아티스트별) 선택변수
 const mdMoreTab =document.querySelector('.mdpick_left .more_btn');//mdpick 더보기탭 선택변수
-//console확인//
-console.log( heroBnr, bestIdle, bestNowz, bestLightsum, best,coming, newslide, mdpick);
+//====================================================================console확인//
+console.log( heroBnr, bestIdle, bestNowz, bestLightsum, best,coming, newslide);
 console.log('------------------------------------------');
 console.log( artistSelect[0],artistSelect[1],artistSelect[2], artistMoreBtn, notiBtn);
 console.log('------------------------------------------');
 console.log(bestTab, productTab, productMoreTab, mdTab, bestSwiper, bestTabSelect);
+console.log(mdpickIdle, mdpickNowz, mdpickLightsum, mdpickSwiper);
+
+console.log('-----------------------------------------------------------------------');
+
 
 //mbpPcik 더보기Tab 버튼 마우스 올렸을때, 나갔을 때 이벤트
 mdMoreTab.addEventListener('mouseover', function(){
     console.log('마우스 올린 이벤트 확인');
     mdMoreTab.children[0].children[0].style.color = '#1c4797';
     mdMoreTab.children[0].style.border= '1px solid #1c4797';
-    mdMoreTab.children[0].children[1].src = "./images/product/product_more_down.svg"
+    mdMoreTab.children[0].children[1].src = "./images/product/more_active.svg"
 })
 mdMoreTab.addEventListener('mouseout', function(){
     mdMoreTab.children[0].children[0].style.color = '#1E1E1E';
     mdMoreTab.children[0].style.border= '1px solid #DDDDDD';
-    mdMoreTab.children[0].children[1].src = "./images/product/product_more.svg"
+    mdMoreTab.children[0].children[1].src = "./images/product/more_btn.svg"
 })
 
-//mdPick Tab 마우스 올렸을때 나갔을때 이벤트
-for(let i of mdTab){
+// mdPick 탭 눌렀을 때
+// 1. 탭을 눌렀을 때, 모든 스와이퍼 사라지기
+// 2. 인덱스 번호와 같은 노드리스트 번호 가진 스와이퍼 출력
+// 3. 모든 탭의 active 사라지고 선택한 탭만 활성화 되기
+
+for (let tab of mdTab){
+    console.log(tab);
+    tab.addEventListener('click', function(e){
+        e.preventDefault();
+        console.log('tab클릭');
+        mdSwiperHide();
+        console.log(tab.dataset.index);
+        const mdIndex = tab.dataset.index;
+        mdpickSwiper[mdIndex].style.display = 'block'
+        for(let s of mdTab){s.classList.remove('active');}
+        mdTab[mdIndex].classList.add('active')
+    })
+}
+// 1. 탭을 눌렀을 때, 모든 스와이퍼 사라지기
+function mdSwiperHide(){
+    for(let swiper of mdpickSwiper)swiper.style.display='none';
+}
+
+
+//mdPick Tab 마우스 올렸을때 나갔을때 이벤트 -> common.css로
+/* for(let i of mdTab){
     console.log(i);
     i.addEventListener('mouseover', function(){
         console.log('마우스올린확인');
@@ -61,7 +92,7 @@ for(let i of mdTab){
         i.children[0].style.borderBottom ='1px solid #f9f9f9';
         i.children[0].children[1].style.display = 'none';
     })
-}
+} */
 
 
 //pruduct 더보기Tab 버튼 마우스 올렸을때, 나갔을 때 이벤트
@@ -76,8 +107,9 @@ productMoreTab.addEventListener('mouseout', function(){
     productMoreTab.children[0].style.border= '1px solid #DDDDDD';
     productMoreTab.children[0].children[1].src = "./images/product/product_more.svg"
 })
-// productTab 마우스 올렸을때 나갔을 때 이벤트
-for(let i of productTab){
+
+// productTab 마우스 올렸을때 나갔을 때 이벤트 -> common.css로 옮김
+/* for(let i of productTab){
     console.log(i);
     i.addEventListener('mouseover', function(){
         console.log('마우스올린확인');
@@ -90,7 +122,7 @@ for(let i of productTab){
         i.children[0].style.borderBottom ='1px solid #f9f9f9';
         i.children[0].children[1].style.display = 'none';
     })
-}
+} */
 
 
 //best tab
@@ -110,8 +142,7 @@ for(let tab of bestTabSelect){
         const bestIndex = tab.dataset.index;
         bestSwiper[bestIndex].style.display='block'
         // 클릭한 탭만 활성화 상태 만들기
-        for(let s of bestTabSelect){
-            s.classList.remove('active');}
+        for(let s of bestTabSelect){s.classList.remove('active');}
         bestTabSelect[bestIndex].classList.add('active');
     })   
 }
@@ -119,8 +150,8 @@ function bestSwiperHide(){
     for(let swiper of bestSwiper)swiper.style.display='none';
 }
 
-// bestTab 마우스 올렸을때 나갔을 때 이벤트
-for(let i of bestTab){
+// bestTab 마우스 올렸을때 나갔을 때 이벤트 -> css에 작성
+/* for(let i of bestTab){
     console.log(i);
     i.addEventListener('mouseover', function(){
         console.log('마우스올린확인');
@@ -135,7 +166,7 @@ for(let i of bestTab){
         i.children[1].style.display = 'none';
     })
     
-}
+} */
 
 //artist 더보기Btn에 마우스 올렸을때 + 나갔을때 이벤트 설정 
 artistMoreBtn.addEventListener('mouseover', function(){
@@ -198,22 +229,42 @@ artistSelect[2].addEventListener('mouseout',function(){
 const bestIdleSwiper = new Swiper(bestIdle, {
     slidesPerView: 4,
     spaceBetween: 20,
+    speed: 1000,
     loop:true,
+    autoplay:{
+        delay:2000,
+        pauseOnMouseEnter: true,
+    },
 })
 const bestNowzSwiper = new Swiper(bestNowz, {
     slidesPerView: 4,
     spaceBetween: 20,
+    speed: 1000,
     loop:true,
+    autoplay:{
+        delay:2000,
+        pauseOnMouseEnter: true,
+    },
 })
 const bestLightsumSwiper = new Swiper(bestLightsum, {
     slidesPerView: 4,
     spaceBetween: 20,
     loop:true,
+    speed: 1000,
+    autoplay:{
+        delay:2000,
+        pauseOnMouseEnter: true,
+    },
 })
 
 //상품 목록 swiper생성
 const heroBnrSwiper = new Swiper(heroBnr, {
     loop: true,
+    speed: 3000,
+    autoplay:{
+        delay:4000,
+        pauseOnMouseEnter: true,
+    },
     scrollbar:{
         el:'.hero .scroll',
     },
@@ -260,6 +311,11 @@ const newSwiper = new Swiper(newslide, {
     loop: true,
     slidesPerView: 4,
     spaceBetween: 20,
+    speed: 1000,
+    autoplay:{
+        delay:5000,
+        pauseOnMouseEnter: true,
+    },
     pagination:{
         el : '.new_wrap .page',
         type:'fraction',
@@ -275,9 +331,35 @@ const newSwiper = new Swiper(newslide, {
         el:'.new_wrap .scroll'
     },
 })
-const mdpickSwiper = new Swiper(mdpick, {
+
+// mdPcik swiper 생성
+const mdpickSwiperIdle = new Swiper(mdpickIdle, {
     loop:true,
+    speed: 1000,
     slidesPerView: 4,
     spaceBetween: 20,
-
+    autoplay:{
+        delay:2000,
+        pauseOnMouseEnter: true,
+    },
+})
+const mdpickSwiperNowz = new Swiper(mdpickNowz, {
+    loop:true,
+    speed: 1000,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    autoplay:{
+        delay:2000,
+        pauseOnMouseEnter: true,
+    },
+})
+const mdpickSwiperLightsum = new Swiper(mdpickLightsum, {
+    loop:true,
+    speed: 1000,
+    slidesPerView: 4,
+    spaceBetween: 20,
+    autoplay:{
+        delay:2000,
+        pauseOnMouseEnter: true,
+    },
 })

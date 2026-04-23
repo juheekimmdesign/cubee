@@ -322,20 +322,21 @@
     padding: 160px 0 160px 80px; width: 100%; height: 100%;
     overflow: hidden;
 }
-#wrap main .product .product_left {
+#wrap main .product .product_left {}
+#wrap main .product .product_left .contents_wrap {
     display: flex; flex-flow: column nowrap;
     gap: 40px; width: 380px;
 }
-#wrap main .product .product_left .title {}
-#wrap main .product .product_left .title h1 {}
-#wrap main .product .product_left .title p {}
-#wrap main .product .product_left .tab_menu {}
-#wrap main .product .product_left .tab_menu li {}
-#wrap main .product .product_left .tab_menu li a {}
-#wrap main .product .product_left .tab_menu li a .tab {}
-#wrap main .product .product_left .tab_menu li .active {}
-#wrap main .product .product_left .tab_menu li .active .tab {}
-#wrap main .product .product_left .tab_menu li .active img {}
+#wrap main .product .product_left .contents_wrap .title {}
+#wrap main .product .product_left .contents_wrap .title h1 {}
+#wrap main .product .product_left .contents_wrap .title p {}
+#wrap main .product .product_left .contents_wrap .tab_menu {}
+#wrap main .product .product_left .contents_wrap .tab_menu li {}
+#wrap main .product .product_left .contents_wrap .tab_menu li a {}
+#wrap main .product .product_left .contents_wrap .tab_menu li a .tab {}
+#wrap main .product .product_left .contents_wrap .tab_menu li .active {border-bottom: 1px solid #1C4797;}
+#wrap main .product .product_left .contents_wrap .tab_menu li .active .tab {color: #1C4797;}
+#wrap main .product .product_left .contents_wrap .tab_menu li .active img {display: block;}
 #wrap main .product .product_left .tab_menu li a img {}
 #wrap main .product .product_left .tab_menu li:first-child a img {}
 #wrap main .product .product_left .more_btn {}
@@ -410,19 +411,20 @@
     display: flex; padding: 160px 0 160px 80px; 
     width: 100%; overflow: hidden;
 }
-#wrap main .mdpick .mdpick_left {
+#wrap main .mdpick .mdpick_left {}
+#wrap main .mdpick .mdpick_left .contents_wrap {
     display: flex; flex-flow: column nowrap; justify-content: space-between;
 }
-#wrap main .mdpick .mdpick_left .title {}
-#wrap main .mdpick .mdpick_left .title h1 {}
-#wrap main .mdpick .mdpick_left .title p {}
-#wrap main .mdpick .mdpick_left .tab_menu {}
-#wrap main .mdpick .mdpick_left .tab_menu li {}
-#wrap main .mdpick .mdpick_left .tab_menu li a {}
-#wrap main .mdpick .mdpick_left .tab_menu li a .tab {}
-#wrap main .mdpick .mdpick_left .tab_menu li .active {}
-#wrap main .mdpick .mdpick_left .tab_menu li .active .tab {}
-#wrap main .mdpick .mdpick_left .tab_menu li .active .img {}
+#wrap main .mdpick .mdpick_left .contents_wrap .title {}
+#wrap main .mdpick .mdpick_left .contents_wrap .title h1 {}
+#wrap main .mdpick .mdpick_left .contents_wrap .title p {}
+#wrap main .mdpick .mdpick_left .contents_wrap .tab_menu {}
+#wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li {}
+#wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li a {}
+#wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li a .tab {}
+#wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li .active {border-bottom: 1px solid #1C4797;}
+#wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li .active .tab {color: #1C4797;}
+#wrap main .mdpick .mdpick_left .contents_wrap .tab_menu li .active img {display: block;}
 #wrap main .mdpick .mdpick_left .more_btn {}
 #wrap main .mdpick .mdpick_left .more_btn a {}
 #wrap main .mdpick .mdpick_left .more_btn .tab {}

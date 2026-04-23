@@ -118,9 +118,6 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap main .container .contents .contents_wrap .title h1 {margin-bottom: 20px; font-family: 'DecaydenceStraight'; font-size: 1.50rem;}
 #wrap main .container .contents .contents_wrap .tab_menu {}
 #wrap main .container .contents .contents_wrap .tab_menu li {}
-#wrap main .container .contents .contents_wrap .tab_menu .active {}
-#wrap main .container .contents .contents_wrap .tab_menu .active .tab {}
-#wrap main .container .contents .contents_wrap .tab_menu .active .img {}
 #wrap main .container .contents .contents_wrap .tab_menu li a {
     display: flex; flex-flow: row nowrap;
     align-items: center; justify-content: space-between; 
@@ -129,7 +126,15 @@ Any resemblance to real-world commercial sites is purely for design practice.
 }
 #wrap main .container .contents .contents_wrap .tab_menu li a .tab {color: #aaa;}
 #wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
-/* 더보기 버튼 */
+/* ==================================================================== 공통 tab_manu버튼에 hover 됐을 때 */
+#wrap main .container .contents .contents_wrap .tab_menu li:hover a {border-bottom: 1px solid #1C4797;}
+#wrap main .container .contents .contents_wrap .tab_menu li:hover a .tab {color: #1C4797;}
+#wrap main .container .contents .contents_wrap .tab_menu li:hover a img {display: block;}
+/* =========================================================================== active는 index.js에 있음. */
+#wrap main .container .contents .contents_wrap .tab_menu li .active {}
+#wrap main .container .contents .contents_wrap .tab_menu li .active .tab {}
+#wrap main .container .contents .contents_wrap .tab_menu li .active .img {}
+/* ================================================================================= moer :: 더보기 버튼 */
 #wrap main .container .contents_more .more_btn a {
     display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
     height: 64px; width: 100%; padding: 10px 20px; border: 1px solid #ddd;
