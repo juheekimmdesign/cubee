@@ -45,11 +45,10 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap header #gnb {
     position: absolute; left: 50%; top:0;
     transform: translateX(-50%);
-    width: 100%;
 }
 #wrap header #gnb .gnb_depth1 {
     display: flex; flex-flow: row nowrap;
-    justify-content: center; 
+    justify-content: center;
     
 }
 #wrap header #gnb .gnb_depth1 > li {}
@@ -94,102 +93,43 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_txt > a {}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_img {width: 100%;}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a p {font-size: 0.69rem;}
-#wrap header #gnb .gnb_bg {background-color:#fff; width: 100%; height: 300px;}
-/* ==================================================================== m_nav :: tablet & movile용 gnb메뉴 복제 스타일 */
-#wrap header .lnb_mnav {}
-#wrap header .lnb_mnav .lnb {}
-#wrap header .lnb_mnav .m_nav {}
-#wrap header .lnb_mnav .m_nav .m_menu {}
-#wrap header .lnb_mnav .m_nav .m_menu img {}
-#wrap header .lnb_mnav .m_nav .m_gnb {display: none;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 {
-    position: absolute; 
-    top: 120px; left: 40px;
-    display: flex; flex-flow: column nowrap;
-    justify-content:center;
-}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li {width: 100%;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li:nth-child(2) .depth2_container .depth2_wrap {display: none;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .active {color: #1C4797; font-weight: 600; border-bottom: 1px solid #1C4797;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > a {display: block; width: 200px; padding: 20px 0}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container {width: 100%;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap {
-    display: flex; flex-flow: row nowrap;
-    justify-content: space-between;
-    position: absolute; top: 0; left: 240px;
-    width: 70vw;
-}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 {display: flex; flex-flow: column nowrap; }
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li {}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > a {
-    display: inline-block; padding: 20px 0 ; width: 160px;
-    font-size: 0.88rem; font-weight: 500;
-    
-}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 .active {
-    color: #1C4797; font-weight: 600; border-bottom: 1px solid #1C4797;
-}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 {
-    display: flex; flex-flow: column nowrap; display: none;
-    position: absolute; top: 0; left: 200px;
-} 
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li {}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li > a {
-    display: inline-block; padding: 20px 0 ; width: 200px; font-size: 0.75rem;
-}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li:nth-child(2) > .gnb_depth3  {display: flex;} 
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr {}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a {}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt{
-    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
-    background-color: #1e1e1e; padding: 4px 10px; width: 100%;
-}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt p {font-size: 0.69rem; color: #fff;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt p > a {}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a p {font-size: 0.69rem;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr .bnr_img {}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn {
-    position: absolute; top: 410px;  right: 20px; z-index: 999;
-}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn a {display: flex; gap: 4px; align-items: c;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn a span {color: #555; font-size: 0.88rem; line-height: 24px;}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn a img {}
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_bg {background-color:#fff; width: 100%; height: 400px; position: absolute; top:80px; left: 0;}
+#wrap header .gnb_bg {background-color:#fff; width: 100%; height: 300px;}
 /* =================================================================== 공통 lnb(검색, 장바구니, 회원정보) */
-#wrap header .lnb_mnav {}
-#wrap header .lnb_mnav > .lnb {
-    display: flex; flex-flow: row nowrap; gap: 20px;}
-#wrap header .lnb_mnav > .lnb a {display: block; width: 24px;}
-#wrap header .lnb_mnav > .lnb a img {width: 100%;}
-#wrap header .lnb_mnav .m_nav {display: none;}
-/* ==================================================================== 공통 콘텐츠 container 설정 + 타이틀 디자인 */
-#wrap main .container {
-    display: flex; flex-flow: row nowrap; 
-    justify-content: space-between; gap: 80px;
-}
-#wrap main .container .contents {}
-#wrap main .container .contents .title {margin-bottom: 40px;}
-#wrap main .container .contents .title p {font-weight: 500; color: #aaa;}
-#wrap main .container .contents .title h1 {margin-bottom: 20px; font-family: 'DecaydenceStraight'; font-size: 1.50rem;}
-/* ==================================================================== 공통 tab_manu 디자인 */
-/* 아티스트 탭 */
-#wrap main .container .contents_more {
-    display: flex; flex-flow: column nowrap; justify-content: space-between;
-}
-#wrap main .container .contents .contents_wrap {}
-#wrap main .container .contents .contents_wrap .title {}
-#wrap main .container .contents .contents_wrap .title p {font-weight: 500; color: #aaa;}
-#wrap main .container .contents .contents_wrap .title h1 {margin-bottom: 20px; font-family: 'DecaydenceStraight'; font-size: 1.50rem;}
-#wrap main .container .contents .contents_wrap .tab_menu {}
-#wrap main .container .contents .contents_wrap .tab_menu li {}
-#wrap main .container .contents .contents_wrap .tab_menu li a {
-    display: flex; flex-flow: row nowrap;
-    align-items: center; justify-content: space-between; 
-    height: 64px; width: 380px; 
-    padding: 10px 0; border-bottom: 1px solid #f9f9f9; 
-}
-#wrap main .container .contents .contents_wrap .tab_menu li a .tab {color: #aaa;}
-#wrap main .container .contents .contents_wrap .tab_menu li a img {display: none;}
+#wrap header .lnb {display: flex; flex-flow: row nowrap; gap: 20px;}
+#wrap header .lnb a {display: block; width: 24px;}
+#wrap header .lnb a img {width: 100%;}
+/* ==================================================================== m_nav :: tablet & movile용 gnb메뉴 복제 스타일 */
+#wrap header .mlnb_mnav {display: none;}
+#wrap header .mlnb_mnav .m_menu {}
+#wrap header .mlnb_mnav .m_menu img {}
+#wrap header .mlnb_mnav .m_nav {}
+#wrap header .mlnb_mnav .m_nav .gnb_close_btn {}
+#wrap header .mlnb_mnav .m_nav .gnb_close_btn a {}
+#wrap header .mlnb_mnav .m_nav .gnb_close_btn a span {}
+#wrap header .mlnb_mnav .m_nav .gnb_close_btn a span img {}
+#wrap header .mlnb_mnav .m_nav .gnb_bg {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > a {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > a {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li a {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr > a {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr > a .bnr_txt {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr > a .bnr_txt p {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr > a .bnr_txt img {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr > a .bnr_img {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr > a p {}
+#wrap header .mlnb_mnav .m_nav .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr > a p {}
+#wrap header .mlnb_mnav .lnb {}
+#wrap header .mlnb_mnav .lnb a {}
+#wrap header .mlnb_mnav .lnb a img{}
 /* ==================================================================== 공통 tab_manu버튼에 hover 됐을 때 */
 #wrap main .container .contents .contents_wrap .tab_menu li:hover a {border-bottom: 1px solid #1C4797;}
 #wrap main .container .contents .contents_wrap .tab_menu li:hover a .tab {color: #1C4797;}

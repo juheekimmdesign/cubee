@@ -73,17 +73,29 @@ for (let i=0; i<10; i++){
         gnbDepth3[i].style.color= '#1e1e1e'
     })
 }
-
-// 데스크톱 메뉴(gnb) 복제해서 모바일 메뉴 위치(m_nav에 붙여넣기)
-const mNav = document.querySelector('.lnb_mnav .m_nav .m_gnb');
-const gnbUl = document.querySelector('#gnb .gnb_depth1')
+// ============================================================
+const mLnb = document.querySelector('.mlnb_mnav');
+const lnb = document.querySelector('.lnb');
+const mNav = document.querySelector('.mlnb_mnav .m_nav');
+const gnbUl = document.querySelector('#gnb .gnb_depth1');
 console.log(mNav, gnbUl);
+// 데스크톱 메뉴(lnb) 복제해서 모바일 메뉴 위치(mlnb_mnav)에 붙여넣기
+const lnbClone = lnb.cloneNode(true);
+console.log(lnbClone);
 
-// 특정 대상 복제 객채.cloneNode() 내장함수 사용
+mLnb.appendChild(lnbClone);
+
+
+// 데스크톱 메뉴(gnb) 복제해서 모바일 메뉴 위치(m_nav)에 붙여넣기
+
+// 특정 대상 복제 객체.cloneNode() 내장함수 사용
 const gnbClone = gnbUl.cloneNode(true);
 console.log(gnbClone);
 
 mNav.appendChild(gnbClone);//자식 붙여넣기
+
+// ============================================================
+
 
 //햄버거 메뉴버튼(.m_nav)를 눌렀을 때 gnb 메뉴 나오기
 const mNavBtn = document.querySelector('.m_nav .m_menu');
