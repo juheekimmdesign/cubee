@@ -96,15 +96,65 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a p {font-size: 0.69rem;}
 #wrap header #gnb .gnb_bg {background-color:#fff; width: 100%; height: 300px;}
 /* ==================================================================== m_nav :: tablet & movile용 gnb메뉴 복제 스타일 */
-
-
-
-/* ==================================================================== 공통 lnb(검색, 장바구니, 회원정보) */
 #wrap header .lnb_mnav {}
-#wrap header .lnb_mnav .lnb {
+#wrap header .lnb_mnav .lnb {}
+#wrap header .lnb_mnav .m_nav {}
+#wrap header .lnb_mnav .m_nav .m_gnb {}
+#wrap header .lnb_mnav .m_nav .m_gnb .m_menu {}
+#wrap header .lnb_mnav .m_nav .m_gnb .m_menu img {}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 {
+    position: absolute; 
+    top: 120px; left: 40px;
+    display: flex; flex-flow: column nowrap;
+    justify-content:center;
+}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li {width: 100%;}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li:nth-child(2) .depth2_container .depth2_wrap {display: none;}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .active {color: #1C4797; font-weight: 600; border-bottom: 1px solid #1C4797;}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > a {display: block; width: 200px; padding: 20px 0}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container {width: 100%;}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    position: absolute; top: 0; left: 240px;
+    width: 70vw;
+}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 {display: flex; flex-flow: column nowrap; }
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li {}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > a {
+    display: inline-block; padding: 20px 0 ; width: 160px;
+    font-size: 0.88rem; font-weight: 500;
+    
+}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 .active {
+    color: #1C4797; font-weight: 600; border-bottom: 1px solid #1C4797;
+}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 {
+    display: flex; flex-flow: column nowrap; display: none;
+    position: absolute; top: 0; left: 200px;
+} 
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li {}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li > a {
+    display: inline-block; padding: 20px 0 ; width: 200px; font-size: 0.75rem;
+}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li:nth-child(2) > .gnb_depth3  {display: block;} 
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr {}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a {}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt{
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center;
+    background-color: #1e1e1e; padding: 4px 10px; width: 100%;
+}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt p {font-size: 0.69rem; color: #fff;}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt p > a {}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a p {font-size: 0.69rem;}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr .bnr_img {}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_bg {background-color:#fff; width: 100%; height: 400px; position: absolute; top:80px; left: 0;}
+/* =================================================================== 공통 lnb(검색, 장바구니, 회원정보) */
+#wrap header .lnb_mnav {}
+#wrap header .lnb_mnav > .lnb {
     display: flex; flex-flow: row nowrap; gap: 20px;}
-#wrap header .lnb_mnav .lnb a {display: block; width: 24px;}
-#wrap header .lnb_mnav .lnb a img {width: 100%;}
+#wrap header .lnb_mnav > .lnb a {display: block; width: 24px;}
+#wrap header .lnb_mnav > .lnb a img {width: 100%;}
 #wrap header .lnb_mnav .m_nav {display: none;}
 /* ==================================================================== 공통 콘텐츠 container 설정 + 타이틀 디자인 */
 #wrap main .container {

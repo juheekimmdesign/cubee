@@ -52,11 +52,11 @@ The similarity to the actual commercial site is purely for design practice.
             <nav id="gnb"><!-- m/t : 아이콘으로 변경 생각중 -->
                 <ul class="gnb_depth1"><!-- hover -->
                     <li>
-                        <a href="#">ARTIST</a>
+                        <a href="#" data-index="0" class="active">ARTIST</a>
                         <div class="depth2_container">
                             <div class="depth2_wrap">
                                 <ul class="gnb_depth2">
-                                    <li><a href="#">i-dle</a></li>
+                                    <li><a href="#" class="active">i-dle</a></li>
                                     <li><a href="#">NOWZ</a></li>
                                     <li><a href="#">LIGHTSUM</a></li>
                                 </ul>
@@ -74,13 +74,13 @@ The similarity to the actual commercial site is purely for design practice.
                         </div>
                     </li>
                     <li>
-                        <a href="#">PRODUCT</a>
+                        <a href="#" data-index="1">PRODUCT</a>
                         <div class="depth2_container">
                             <div class="depth2_wrap">
                                 <ul class="gnb_depth2">
                                     <li><a href="#">ALL</a></li>
                                     <li>
-                                        <a href="#">MUSIC</a>
+                                        <a href="#" class="active">MUSIC</a>
                                         <ul class="gnb_depth3">
                                             <li><a href="#">CD</a></li>
                                             <li><a href=""#>DVD</a></li>
@@ -128,8 +128,8 @@ The similarity to the actual commercial site is purely for design practice.
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">EVENT</a></li>
-                    <li><a href="#">NOTICE</a></li>
+                    <li><a href="#" data-index="2">EVENT</a></li>
+                    <li><a href="#" data-index="3">NOTICE</a></li>
                 </ul>
                 <div class="gnb_bg"></div>
             </nav>
@@ -139,7 +139,12 @@ The similarity to the actual commercial site is purely for design practice.
                     <a href="#" class="cart"><img src="./images/common/cart.svg" alt="장바구니"></a><!-- cart.svg -->
                     <a href="#" class="user"><img src="./images/common/user.svg" alt="회원정보"></a><!-- memvers.svg -->
                 </div>
-                <div class="m_nav"><a href="#"><img src="./images/product/gnb_menu.svg" alt="전체메뉴보기"></a></div><!-- js 붙여넣기 위치 -->
+                <div class="m_nav">
+                    <a href="#" class="m_menu"><img src="./images/product/gnb_menu.svg" alt="전체메뉴보기"></a>
+                    <div class="m_gnb"><!-- js 붙여넣기 위치 -->
+                        <div class="gnb_bg"></div>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
@@ -149,7 +154,7 @@ The similarity to the actual commercial site is purely for design practice.
                     <div class="swiper-wrapper">
                         <div class="swiper-slide slide1"><!-- background img  -->
                             <div class="slide_txt">
-                                <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
+                                <h1>작고 귀여운 i-dle <br>minini의 등장!</h1>
                                 <a href="#" class = more_btn>
                                     <span>지금 만나보기</span>
                                     <img src="./images/common/more.svg" alt="더보기">
@@ -158,7 +163,7 @@ The similarity to the actual commercial site is purely for design practice.
                         </div>
                         <div class="swiper-slide slide2"><!-- background img  -->
                             <div class="slide_txt">
-                                <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
+                                <h1>작고 귀여운 i-dle <br>minini의 등장!</h1>
                                 <a href="#" class = more_btn>
                                     <span>지금 만나보기</span>
                                     <img src="./images/common/more.svg" alt="더보기">
@@ -167,7 +172,7 @@ The similarity to the actual commercial site is purely for design practice.
                         </div>
                         <div class="swiper-slide slide3"><!-- background img  -->
                             <div class="slide_txt">
-                                <h1>작고 귀여운 i-dle<br>minini의 등장!</h1>
+                                <h1>작고 귀여운 i-dle <br>minini의 등장!</h1>
                                 <a href="#" class = more_btn >
                                     <span>지금 만나보기</span>
                                     <img src="./images/common/more.svg" alt="더보기">

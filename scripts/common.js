@@ -75,7 +75,7 @@ for (let i=0; i<10; i++){
 }
 
 // 데스크톱 메뉴(gnb) 복제해서 모바일 메뉴 위치(m_nav에 붙여넣기)
-const mNav = document.querySelector('.lnb_mnav .m_nav');
+const mNav = document.querySelector('.lnb_mnav .m_nav .m_gnb');
 const gnbUl = document.querySelector('#gnb .gnb_depth1')
 console.log(mNav, gnbUl);
 
@@ -86,3 +86,25 @@ console.log(gnbClone);
 mNav.appendChild(gnbClone);//자식 붙여넣기
 
 //햄버거 메뉴버튼(.m_nav)를 눌렀을 때, gnb 나오고 들어가기
+
+
+// m_nav 메뉴 클릭했을 때,
+const mNavDep1 = mNav.querySelectorAll('.gnb_depth1 > li > a');
+const mNavDep2 = mNav.querySelectorAll('.depth2_container .depth2_wrap')
+console.log(mNavDep1, mNavDep2);
+for(let tab of mNavDep1){
+    tab.addEventListener('click', function(e){
+        e.preventDefault();
+        console.log('m의 tab메뉴를 클릭하다..');
+        mNavDep2Hide()
+        console.log(tab.dataset.index);
+        const gnbIndex = tab.dataset.index;
+        mNavDep2[gnbIndex].style.display='flex'
+        //클릭한 탭 활성화
+        for(let dep1 of mNavDep1){dep1.classList.remove('active')};
+        mNavDep1[gnbIndex].classList.add('active')
+    })
+}
+function mNavDep2Hide(){
+    for(let dep2 of mNavDep2)dep2.style.display='none';
+}

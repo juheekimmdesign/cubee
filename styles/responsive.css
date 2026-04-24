@@ -5,7 +5,7 @@
     #wrap {min-width: 1024px;}
     #wrap header #gnb {display:none;}
     #wrap header .lnb_mnav {display: flex; gap: 20px; align-items: center;}
-    #wrap header .lnb_mnav .m_nav {display: block;}
+    #wrap header .lnb_mnav .m_nav {display: block; width: 100%;}
     /* ================================================================================ 1. hero_bnr (index.css)*/
     #wrap main .hero_bnr .hero {height: 810px;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{max-width: 1024px; top: 84%;}
