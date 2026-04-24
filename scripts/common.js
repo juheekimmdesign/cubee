@@ -87,22 +87,27 @@ mNav.appendChild(gnbClone);//자식 붙여넣기
 
 //햄버거 메뉴버튼(.m_nav)를 눌렀을 때 gnb 메뉴 나오기
 const mNavBtn = document.querySelector('.m_nav .m_menu');
-const mGnbBg = document.querySelector('.m_gnb .gnb_bg')
-console.log(mNavBtn);
+const mGnbBg = document.querySelector('.m_gnb .gnb_bg');
+const mGnbClose = document.querySelector('.m_gnb .gnb_close_btn');
+console.log(mNavBtn, mGnbBg, mGnbClose);
 mNavBtn.addEventListener('click', function(e){
     e.preventDefault();
     console.log('햄버거클릭확인')
     mNav.style.display = 'block';
 })
+//gnbBG를 눌렀을 때, gnb 메뉴 사라지기
 mGnbBg.addEventListener('click', function(e){
     e.preventDefault();
     console.log('mgnbbg를 클릭확인')
     mNav.style.display = 'none';
 })
-//gnbBG를 눌렀을 때, gnb 메뉴 사라지기
+//gnbCloseBtn를 눌렀을 때도 gnb 메뉴 사라지기
+mGnbClose.addEventListener('click', function(e){
+    e.preventDefault();
+    console.log('mgnbbg를 클릭확인')
+    mNav.style.display = 'none';
+})
 
-
-//m_nav 햄버거버튼 클릭시 gnb메뉴 보이기 안보이기
 
 
 // m_nav 메뉴 클릭했을 때,
