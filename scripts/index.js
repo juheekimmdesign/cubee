@@ -261,10 +261,10 @@ const bestLightsumSwiper = new Swiper(bestLightsum, {
 const heroBnrSwiper = new Swiper(heroBnr, {
     loop: true,
     speed: 3000,
-    autoplay:{
+    /* autoplay:{
         delay:4000,
         pauseOnMouseEnter: true,
-    },
+    }, */
     scrollbar:{
         el:'.hero .scroll',
     },

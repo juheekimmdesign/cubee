@@ -1,6 +1,21 @@
 /* responsive.css */
 /* tablet size mediaquary :: 1024 이하일때 */
 @media screen and (max-width:1024px){/* 1024px 이하일때 */
-    
-
+    /* ================================================================================ 0. header (common.css) */
+    #wrap {min-width: 1024px;}
+    #wrap header #gnb {display:none;}
+    #wrap header .lnb_mnav {display: flex; gap: 20px; align-items: center;}
+    #wrap header .lnb_mnav .m_nav {display: block;}
+    /* ================================================================================ 1. hero_bnr (index.css)*/
+    #wrap main .hero_bnr .hero {height: 810px;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{max-width: 1024px; top: 84%;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {text-align: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 br {display: none;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt .more_btn {justify-content: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide1 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
+    #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
 }

@@ -74,4 +74,15 @@ for (let i=0; i<10; i++){
     })
 }
 
-// 공통tab_menuBtn에 마우스 올렸을때 + 나갔을때 이벤트 설정
+// 데스크톱 메뉴(gnb) 복제해서 모바일 메뉴 위치(m_nav에 붙여넣기)
+const mNav = document.querySelector('.lnb_mnav .m_nav');
+const gnbUl = document.querySelector('#gnb .gnb_depth1')
+console.log(mNav, gnbUl);
+
+// 특정 대상 복제 객채.cloneNode() 내장함수 사용
+const gnbClone = gnbUl.cloneNode(true);
+console.log(gnbClone);
+
+mNav.appendChild(gnbClone);//자식 붙여넣기
+
+//햄버거 메뉴버튼(.m_nav)를 눌렀을 때, gnb 나오고 들어가기

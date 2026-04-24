@@ -12,7 +12,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
 /* ================================================================================================================ */
 #wrap {min-width: 1760px;}
 /* ----------------------------------------------------------- top_bnr */
-#wrap .top_bnr_swiper {width: 100%;}
+#wrap .top_bnr_swiper {position: fixed; top: 0; left: 0; width: 100%; z-index: 999;}
 #wrap .top_bnr_swiper .top_bnr {}
 #wrap .top_bnr_swiper .top_bnr .swiper-wrapper {}
 #wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide {text-align: center; background-color: #F5F8FF;}
@@ -31,9 +31,12 @@ Any resemblance to real-world commercial sites is purely for design practice.
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
     height: 80px; padding: 0 40px;
-    position: relative; z-index: 999;
+    position: fixed; z-index: 999;
     width: 100%;
     border-bottom: 1px solid #eee;
+    top: 32px; left: 0;
+    width: 100%;
+
 }
 #wrap header h1 {width: 244px;}
 #wrap header h1 a {}
@@ -92,12 +95,17 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a .bnr_img {width: 100%;}
 #wrap header #gnb .gnb_depth1 > li > .depth2_container .depth2_wrap .gnb_bnr a p {font-size: 0.69rem;}
 #wrap header #gnb .gnb_bg {background-color:#fff; width: 100%; height: 300px;}
+/* ==================================================================== m_nav :: tablet & movile용 gnb메뉴 복제 스타일 */
+
+
+
 /* ==================================================================== 공통 lnb(검색, 장바구니, 회원정보) */
-#wrap header .lnb {
-    display: flex; flex-flow: row nowrap;
-    gap: 20px;}
-#wrap header .lnb a {display: block; width: 24px;}
-#wrap header .lnb a img {width: 100%;}
+#wrap header .lnb_mnav {}
+#wrap header .lnb_mnav .lnb {
+    display: flex; flex-flow: row nowrap; gap: 20px;}
+#wrap header .lnb_mnav .lnb a {display: block; width: 24px;}
+#wrap header .lnb_mnav .lnb a img {width: 100%;}
+#wrap header .lnb_mnav .m_nav {display: none;}
 /* ==================================================================== 공통 콘텐츠 container 설정 + 타이틀 디자인 */
 #wrap main .container {
     display: flex; flex-flow: row nowrap; 
