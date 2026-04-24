@@ -93,7 +93,7 @@ console.log(mNavBtn, mGnbBg, mGnbClose);
 mNavBtn.addEventListener('click', function(e){
     e.preventDefault();
     console.log('햄버거클릭확인')
-    mNav.style.display = 'block';
+    mNav.style.display = 'flex';
 })
 //gnbBG를 눌렀을 때, gnb 메뉴 사라지기
 mGnbBg.addEventListener('click', function(e){

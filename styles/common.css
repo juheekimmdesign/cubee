@@ -137,7 +137,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li > a {
     display: inline-block; padding: 20px 0 ; width: 200px; font-size: 0.75rem;
 }
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li:nth-child(2) > .gnb_depth3  {display: block;} 
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li:nth-child(2) > .gnb_depth3  {display: flex;} 
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr {}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a {}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a .bnr_txt{
@@ -149,9 +149,9 @@ Any resemblance to real-world commercial sites is purely for design practice.
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a p {font-size: 0.69rem;}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr .bnr_img {}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn {
-    position: absolute; top: 400px;  right: 20px; z-index: 999;
+    position: absolute; top: 410px;  right: 20px; z-index: 999;
 }
-#wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn a {display: flex; gap: 4px; align-items: center;}
+#wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn a {display: flex; gap: 4px; align-items: c;}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn a span {color: #555; font-size: 0.88rem; line-height: 24px;}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn a img {}
 #wrap header .lnb_mnav .m_nav .m_gnb .gnb_bg {background-color:#fff; width: 100%; height: 400px; position: absolute; top:80px; left: 0;}

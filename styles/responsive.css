@@ -19,3 +19,36 @@
     #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
     #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
 }
+/* 800 이하 일때 */
+@media screen and (max-width: 800px){
+    /* ================================================================================ 0. header (common.css) */
+    #wrap {min-width: 800px;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 {flex-flow: row nowrap; left: 40px; gap: 40px;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > a {width: 100%; font-size: 0.88rem; text-align: center; }
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap {
+        flex-flow: row nowrap; top: 80px; left:0;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 {flex-flow: row nowrap; gap: 40px;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > a {width: 100%;  font-size: 0.75rem; font-weight: 400;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 {
+        flex-flow: row nowrap; top: 80px; left:0; gap: 40px;
+    }
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 > li > a {width: 100%;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr {display: none;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_bg {height: 340px;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn {top: 360px; right: 40px;}
+    /* ================================================================================ 1. hero_bnr (index.css)*/
+}
+/* 580 이하일 때 */
+@media screen and (max-width: 580px){
+/* ==================================================================================== 0. header (common.css)*/
+    /* #wrap header .lnb_mnav .lnb {position: absolute; top: 500px; left: 40px; z-index: 999;} */
+    #wrap header .lnb_mnav .lnb {display: none;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 {flex-flow: row wrap; gap: 40px;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_depth2 > li > .gnb_depth3 {top: 160px;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_bg {height: 500px;}
+    #wrap header .lnb_mnav .m_nav .m_gnb .gnb_close_btn {top: 500px; right: 40px;}
+}
+/* mobile 440 이하일 때 */
+@media screen and (max-width: 440px){
+    #wrap {max-width: 440px;}
+}
