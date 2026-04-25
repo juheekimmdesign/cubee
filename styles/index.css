@@ -152,6 +152,7 @@
 #wrap main .best .best_right .best_swiper .swiper-wrapper .swiper-slide .item_info .info .badge span {}
 /* -------------------------------------------------------------------------------------------- 5. comingsoon */
 #wrap main .coming_container {
+    display: flex;
     width: 100%; margin: 0 80px 160px 0; height: 940px; gap: 40px;
     justify-content: start;
 }
