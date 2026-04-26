@@ -183,3 +183,18 @@ Any resemblance to real-world commercial sites is purely for design practice.
     color: #fff; background-color: #1e1e1e;
 }
 #wrap main .container .contents .item .swiper .swiper-wrapper .swiper-slide .item_info .info .badge span:last-child {background-color: #1C4797; margin-left: 8px;}
+/* ========================================================================cta */
+.floating_cta {
+    position: fixed; right: 20px; bottom: 100px;
+    display: flex; flex-flow: column nowrap;
+    z-index: 999;
+    border: 1px solid #eee;
+}
+.floating_cta a {
+    display: flex; align-items: center; justify-content: center;
+    width: 48px; height: 48px;
+    background: rgba(255,255,255,0.8);
+    
+}
+.floating_cta a img {width: 24px; height: 24px;}
+.floating_cta span {height: 1px; width: 100%; background: #eee; }
