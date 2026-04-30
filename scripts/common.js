@@ -5,10 +5,19 @@ const gnbBg = document.querySelector('#gnb .gnb_bg'); //gnbBg
 const gnbDepth1 = document.querySelectorAll('#gnb .gnb_depth1 > li');
 const gnbDepth2 = document.querySelectorAll('.depth2_container .depth2_wrap .gnb_depth2 > li');
 const gnbDepth3 = document.querySelectorAll('.gnb_depth3 > li > a');
+const like = document.querySelectorAll('.item_list .like');
+
 
 console.log(topBnr, gnbDepth1[0], gnbDepth1[1], gnbDepth1[2], gnbDepth1[3]);
-console.log(gnbDepth2, gnbDepth3);
+console.log(gnbDepth2, gnbDepth3, like);
 
+for(let i of like){
+    i.addEventListener('click', function(e){
+        console.log('click확인');
+        e.preventDefault();
+        i.children[0].src = "./images/product/like_on.svg";
+    })
+}
 
 // top배너 스와이퍼 슬라이드
 const topBnrSwiper = new Swiper(topBnr, {

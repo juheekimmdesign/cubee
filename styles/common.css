@@ -115,7 +115,7 @@ Any resemblance to real-world commercial sites is purely for design practice.
 }
 #wrap main .container .contents {}
 #wrap main .container .contents .title {margin-bottom: 40px;}
-#wrap main .container .contents .title p {font-weight: 500; color: #aaa;}
+#wrap main .container .contents .title p {font-weight: 500; line-height: 160%; color: #aaa;}
 #wrap main .container .contents .title h1 {margin-bottom: 20px; font-family: 'DecaydenceStraight'; font-size: 1.50rem;}
 /* ==================================================================== 공통 tab_manu 디자인 */
 /* 아티스트 탭 */

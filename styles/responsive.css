@@ -1,6 +1,4 @@
 /* responsive.css */
-/* tablet size mediaquary :: 1024 이하일때 */
-/* 태블릿 1024px 이하 */
 @media screen and (max-width: 1400px){
     /* =====================================================================================================1. herobnr */
     #wrap main .hero_bnr .hero {height: 810px;}
@@ -14,6 +12,11 @@
     #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_t.jpg);}
     #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
     #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
+    /* ---------------------------------------------------------------- 3. add_bnr */
+    #wrap main .add_bnr_product {
+        background-size: cover; background-position: right;
+    }
+    #wrap main .add_bnr_product .add_contents {left: 60px;}
 }
 
 @media screen and (max-width: 1200px){
@@ -91,6 +94,13 @@
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a p {font-size: 0.69rem; color: #fff;}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr .bnr_img {width:100%}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
+    /* ---------------------------------------------------------------- 3. add_bnr */
+    #wrap main .add_bnr_product {
+        background-size: cover; background-position: right;
+    }
+    #wrap main .add_bnr_product .add_contents {left: 60px;}
+    #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
+    
 }
 
 @media screen and (max-width: 1024px){
@@ -104,14 +114,29 @@
     #wrap main .hero_bnr .hero .page_scroll{width: 60vw;}
     #wrap main .hero_bnr .hero .page_scroll .scroll {width: 50vw;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-repeat: no-repeat;background-position: center;}
-
+    /* ---------------------------------------------------------------- 2. artist */
+    #wrap main .artist {width: calc(100vw - 120px);}
+    #wrap main .artist .artist_left {width: 100%;}
     /* ---------------------------------------------------------------- 3. add_bnr */
+    #wrap main .add_bnr_product {
+        background-image: url(../images/product/add_bnr_01_t.jpg);
+        background-size: cover;
+    }
+    #wrap main .add_bnr_product .add_contents {
+        display: block;
+        position: absolute; left: 60px; top: 50%; transform: translateY(-50%);
+    }
     #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
+    /* ---------------------------------------------------4.best */
+    #wrap main .best {
+        padding: 160px 0 160px 60px;
+    }
+    
 }
 
 @media screen and (max-width:800px){
     /* --------------------------------------------------------------2. artist */
-    #wrap main .artist {flex-flow: column nowrap; height: auto; justify-content: center; align-items: center;}
+    #wrap main .artist {width: calc(100vw - 60px); flex-flow: column nowrap; height: auto; justify-content: center; align-items: center;}
     #wrap main .artist .artist_left {}
     #wrap main .artist .artist_left .title {text-align: center;}
     #wrap main .artist .artist_left .more_btn a {}
@@ -144,6 +169,11 @@
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {font-size: 1.50rem;}
 }
 @media screen and (max-width: 440px) {
+    /* ----------------------------------------------------------- top_bnr */
+    #wrap .top_bnr_swiper {position: fixed; top: 0; left: 0; width: 100%; z-index: 999;}
+    #wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide a:nth-child(1) {
+        font-size: 0.69rem; line-height: auto; 
+    }
     #wrap main {max-width: 440px;}
     #wrap header .header_right .tm_nav {min-width: 300px;}
 }

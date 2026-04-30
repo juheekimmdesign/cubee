@@ -77,7 +77,6 @@
 #wrap main .artist .artist_left .more_btn a img {}
 #wrap main .artist .artist_right {
     display: flex; flex-flow: row nowrap; gap: 20px;
-    max-width: calc(100vw - 540px);
 }
 #wrap main .artist .artist_right a {}
 #wrap main .artist .artist_right a img {width: 100%;}
@@ -86,6 +85,8 @@
 #wrap main .add_bnr_product {
     height: 200px;
     background-image: url(../images/product/add_bnr_01.png);
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 #wrap main .add_bnr_product .add_contents {
