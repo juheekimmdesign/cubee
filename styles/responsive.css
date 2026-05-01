@@ -99,7 +99,6 @@
     }
     /* ---------------------------------------------------------- 2.artist */
     #wrap main .artist .artist_right {justify-content: center; align-items: center;}
-    #wrap main .artist .artist_left {justify-content: center;}
     #wrap main .artist .artist_left .more_btn {width: 260px; margin: 0 auto;}
 
     /* ==================================================================== 공통 콘텐츠 container 설정 + 타이틀 디자인 */
