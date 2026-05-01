@@ -235,6 +235,21 @@ const bestIdleSwiper = new Swiper(bestIdle, {
         delay:2000,
         pauseOnMouseEnter: true,
     },
+    //반응형 옵션 break points(사용자의 디바이스 너비 기준)
+    breakpoints:{
+        1200:{
+            slidesPerView: 4,
+            grid: {rows: 1,},
+        },
+        800:{
+            slidesPerView: 2.5,
+            grid: {rows: 1,},
+        },
+        0:{
+            slidesPerView: 2,
+            grid: {rows: 2,},
+        },
+    },
 })
 const bestNowzSwiper = new Swiper(bestNowz, {
     slidesPerView: 4,
@@ -245,6 +260,21 @@ const bestNowzSwiper = new Swiper(bestNowz, {
         delay:2000,
         pauseOnMouseEnter: true,
     },
+    //반응형 옵션 break points(사용자의 디바이스 너비 기준)
+    breakpoints:{
+        1200:{
+            slidesPerView: 4,
+            grid: {rows: 1,},
+        },
+        800:{
+            slidesPerView: 2.5,
+            grid: {rows: 1,},
+        },
+        0:{
+            slidesPerView: 2,
+            grid: {rows: 2,},
+        },
+    },
 })
 const bestLightsumSwiper = new Swiper(bestLightsum, {
     slidesPerView: 4,
@@ -254,6 +284,21 @@ const bestLightsumSwiper = new Swiper(bestLightsum, {
     autoplay:{
         delay:2000,
         pauseOnMouseEnter: true,
+    },
+    //반응형 옵션 break points(사용자의 디바이스 너비 기준)
+    breakpoints:{
+        1200:{
+            slidesPerView: 4,
+            grid: {rows: 1,},
+        },
+        800:{
+            slidesPerView: 2.5,
+            grid: {rows: 1,},
+        },
+        0:{
+            slidesPerView: 2,
+            grid: {rows: 2,},
+        },
     },
 })
 

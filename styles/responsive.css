@@ -1,42 +1,5 @@
 /* responsive.css */
 @media screen and (max-width: 1400px){
-    /* =====================================================================================================1. herobnr */
-    #wrap main .hero_bnr .hero {height: 810px;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{top:80%; left: 50%; transform: translateX(-50%);}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {text-align: center;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 br {display: none;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt .more_btn {justify-content: center;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-position: center; background-repeat: no-repeat;}
-    #wrap main .hero_bnr .hero .swiper-wrapper .slide1 {background-image: url(../images/product/hero_bnr_t.jpg);}
-    #wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_t.jpg);}
-    #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_t.jpg);}
-    #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
-    #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
-    /* ---------------------------------------------------------------- 3. add_bnr */
-    #wrap main .add_bnr_product {
-        background-size: cover; background-position: right;
-    }
-    #wrap main .add_bnr_product .add_contents {left: 60px;}
-}
-
-@media screen and (max-width: 1200px){
-    #wrap header .header_right .lnb {display: none;}
-    #wrap header .header_right .tm_menu {display: block;}
-    #wrap header .header_right .tm_nav {
-        background: #fff; 
-        display: flex; flex-flow: column nowrap;
-        position: fixed; left: 0; top: 112px;
-        width: 60vw; height: calc(100vh - 112px); z-index: 999;
-        padding: 40px; overflow-y: auto;
-        display: none;
-    }
-    #wrap header .header_right .tm_gnb_bg {
-        position: fixed; left: 0; top: 112px;
-        width: 100vw; height: 100vh;
-        background: rgba(0,0,0,0.6);
-        z-index: 998;
-        display: none;
-    }
     /* ==================================================================== 태블릿 모바일 gnb, lnb */
     #wrap header .header_right .tm_nav .tm_nav_top {
         display: flex; flex-flow: row nowrap;
@@ -94,6 +57,53 @@
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr a p {font-size: 0.69rem; color: #fff;}
     #wrap header .header_right .tm_nav .tm_gnb .gnb_depth1 > li > .depth2_container > .depth2_wrap > .gnb_bnr .bnr_img {width:100%}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-position: center;}
+    /* =====================================================================================================1. herobnr */
+    #wrap main .hero_bnr .hero {height: 810px;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{top:80%; left: 50%; transform: translateX(-50%);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {text-align: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 br {display: none;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt .more_btn {justify-content: center;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-position: center; background-repeat: no-repeat;}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide1 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide2 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .swiper-wrapper .slide3 {background-image: url(../images/product/hero_bnr_t.jpg);}
+    #wrap main .hero_bnr .hero .prev {top: 60%; left: 60px; transform: translateY(-60%) scale(0.6);}
+    #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
+    /* ---------------------------------------------------------------- 3. add_bnr */
+    #wrap main .add_bnr_product {
+        background-size: cover; background-position: right;
+    }
+    #wrap main .add_bnr_product .add_contents {left: 60px;}
+    /* ---------------------------------------------------4.best */
+    #wrap main .container .contents {flex: 0 0 210px;}
+    #wrap main .container .contents .contents_wrap {flex:0 0 320px;}
+}
+
+@media screen and (max-width: 1200px){
+    #wrap header .header_right .lnb {display: none;}
+    #wrap header .header_right .tm_menu {display: block;}
+    #wrap header .header_right .tm_nav {
+        background: #fff; 
+        display: flex; flex-flow: column nowrap;
+        position: fixed; left: 0; top: 112px;
+        width: 60vw; height: calc(100vh - 112px); z-index: 999;
+        padding: 40px; overflow-y: auto;
+        display: none;
+    }
+    #wrap header .header_right .tm_gnb_bg {
+        position: fixed; left: 0; top: 112px;
+        width: 100vw; height: 100vh;
+        background: rgba(0,0,0,0.6);
+        z-index: 998;
+        display: none;
+    }
+    /* ---------------------------------------------------------- 2.artist */
+    #wrap main .artist .artist_right {justify-content: center; align-items: center;}
+    #wrap main .artist .artist_left {justify-content: center;}
+    #wrap main .artist .artist_left .more_btn {width: 260px; margin: 0 auto;}
+
+    /* ==================================================================== 공통 콘텐츠 container 설정 + 타이틀 디자인 */
+    #wrap main .container {gap: 40px;}
     /* ---------------------------------------------------------------- 3. add_bnr */
     #wrap main .add_bnr_product {
         background-size: cover; background-position: right;
@@ -114,29 +124,13 @@
     #wrap main .hero_bnr .hero .page_scroll{width: 60vw;}
     #wrap main .hero_bnr .hero .page_scroll .scroll {width: 50vw;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide {background-size: cover; background-repeat: no-repeat;background-position: center;}
-    /* ---------------------------------------------------------------- 2. artist */
-    #wrap main .artist {width: calc(100vw - 120px);}
-    #wrap main .artist .artist_left {width: 100%;}
-    /* ---------------------------------------------------------------- 3. add_bnr */
-    #wrap main .add_bnr_product {
-        background-image: url(../images/product/add_bnr_01_t.jpg);
-        background-size: cover;
-    }
-    #wrap main .add_bnr_product .add_contents {
-        display: block;
-        position: absolute; left: 60px; top: 50%; transform: translateY(-50%);
-    }
-    #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
-    /* ---------------------------------------------------4.best */
-    #wrap main .best {
-        padding: 160px 0 160px 60px;
-    }
     
+    /* ==================================================================== 공통 tab_manu 디자인 */
+    #wrap main .container .contents .contents_wrap .tab_menu li a {
+    width: 100%;
 }
-
-@media screen and (max-width:800px){
-    /* --------------------------------------------------------------2. artist */
-    #wrap main .artist {width: calc(100vw - 60px); flex-flow: column nowrap; height: auto; justify-content: center; align-items: center;}
+    /* ---------------------------------------------------------------- 2. artist */
+    #wrap main .artist {width: calc(100vw - 60px); flex-flow: column nowrap; height: auto;}
     #wrap main .artist .artist_left {}
     #wrap main .artist .artist_left .title {text-align: center;}
     #wrap main .artist .artist_left .more_btn a {}
@@ -148,11 +142,24 @@
     }
     #wrap main .artist .artist_right a {}
     #wrap main .artist .artist_right a img {width: 100%;}
+    /* ---------------------------------------------------------------- 3. add_bnr */
+    #wrap main .add_bnr_product {
+        background-image: url(../images/product/add_bnr_01_t.jpg);
+        background-size: cover;
+    }
+    #wrap main .add_bnr_product .add_contents {
+        display: block;
+        position: absolute; left: 60px; top: 50%; transform: translateY(-50%);
+    }
+    #wrap main .add_bnr_product .add_contents h1 {font-size: 1.38rem;}
+    /* ---------------------------------------------------4.best */
+    #wrap main .best {padding: 160px 0 160px 60px;}
+     /* ---------------------------------------------------4.best */
+    #wrap main .best {flex-flow: column nowrap; padding: 160px 0 160px 60px;}
+    #wrap main .best .best_right {width: 100%;}
 }
 
-
-/* 모바일 580px 이하 */
-@media screen and (max-width: 580px) {
+@media screen and (max-width:800px){
     /* =====================================================================================================1. herobnr */
     #wrap main .hero_bnr .hero {height: 80vh; width: 100vw;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{max-width: 580px; top: 84%;}
@@ -167,8 +174,12 @@
     #wrap main .hero_bnr .hero .next {top: 60%; right: 60px; transform: translateY(-60%) scale(-0.6);}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt{top:75%;}
     #wrap main .hero_bnr .hero .swiper-wrapper .swiper-slide .slide_txt h1 {font-size: 1.50rem;}
+    
 }
-@media screen and (max-width: 440px) {
+
+
+/* 모바일 580px 이하 */
+@media screen and (max-width: 580px) {
     /* ----------------------------------------------------------- top_bnr */
     #wrap .top_bnr_swiper {position: fixed; top: 0; left: 0; width: 100%; z-index: 999;}
     #wrap .top_bnr_swiper .top_bnr .swiper-wrapper .swiper-slide a:nth-child(1) {
@@ -176,4 +187,5 @@
     }
     #wrap main {max-width: 440px;}
     #wrap header .header_right .tm_nav {min-width: 300px;}
+    
 }
